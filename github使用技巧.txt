@@ -9,3 +9,67 @@ https://gitpod.io/#/github.com/TZ-Apchy/lede
 在项目地址前加上gitpod.io前缀：可以在网页vscode中打开了项目代码，而且还能自动识别项目类型，自动安装所需要的依赖包，而且可以把网页远程服务器当作自己的电脑使用，可以在控制台进行很多有意义的操作，如：运行代码，构建项目等
 
 get email updates可以设置定期推送自己感兴趣的项目(入口点击左侧github图标，接着点击explore即可到达指定页面进行设置)
+
+git使用：
+配置用户：git config --global user.name "zhangsan" 
+配置邮箱：git config --global user.email "zhangsan@qq.com"
+
+初始化本地仓库：git init
+
+将文件提交到暂存区：git add 文件名
+将该目录下所有文件都添加到暂存区：git add .
+将文件提交到仓库：git commit -m "提交时想要填写的备注信息"
+
+查看文件的提交状态：git status（红色代表文件没有进行add操作，绿色则表示文件已经进行了add操作）
+查看提交的日志：git reflog
+
+版本回溯：
+1.git reset --hard HEAD^----回溯到上个版本
+2.git reset --hard 版本的hash码（可通过git reflog命令查看）
+HEAD 最新版本
+HEAD^ 上一个版本
+HEAD^^ 上上一个版本
+HEAD~5 回溯5个版本
+
+撤销文件的修改（没有commit操作）：
+1.文档没有git add
+git checkout -- one.txt
+2.文档已经git add
+1)先把文件还原到仓库的最新版本
+git reset HEAD one.txt
+2)将仓库中的文件替代当前修改的文件
+git checkout -- one.txt
+
+删除文件：
+先用git删除，再提交到仓库
+git rm 文件名
+git commit -m "提交备注"
+
+分支操作：
+新建分支
+git branch 分支名
+查看分支
+git branch -a
+切换分支
+git checkout 分支名
+创建的同时切换分支
+git checkout -b 分支名
+合并分支
+git merge 分支名称
+
+删除本地分支
+git branch -d 分支名
+删除远程仓库分支
+git push origin -d 分支名
+
+
+
+远程仓库上传和下载（用github举例）：
+打开git bash控制台，生成本地公私钥
+ssh-keygen -t rsa -C "自己注册github邮箱"
+在本地找到生成的密钥文件，并复制id_rsa.pub中全部内容
+如：C:\Users\TZ\.ssh\id_rsa.pub
+去github上配置
+Settings-->SSH and GPG keys-->New SSH key
+
+
