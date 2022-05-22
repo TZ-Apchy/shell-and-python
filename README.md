@@ -1,2 +1,2 @@
-# 666
-Learning makes me happy！！！
+# study
+Let's learn together！！！
