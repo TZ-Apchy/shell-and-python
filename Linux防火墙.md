@@ -356,6 +356,6 @@ iptables -R INPUT 1 -m iprange ! --src-range 192.168.193.151-192.168.193.154 -p 
 > 指定多个端口，就没必要写多条规则
 
 ```
-# 放行多个端口，-m制定多端口选项multiport
+# 放行多个端口，-m指定多端口选项multiport
 iptables -A INPUT -m multiport -p tcp --dport 80,8080,443 -j ACCEPT
 ```
