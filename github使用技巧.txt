@@ -13,6 +13,7 @@ get email updates可以设置定期推送自己感兴趣的项目(入口点击�
 git使用：
 配置用户：git config --global user.name "zhangsan" 
 配置邮箱：git config --global user.email "zhangsan@qq.com"
+查看配置信息：git config -l
 
 初始化本地仓库：git init
 
