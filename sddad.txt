@@ -1,1 +1,0 @@
-   RX packets 73727447 bytes 9540859264 (8.8 GiB)
