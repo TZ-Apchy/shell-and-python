@@ -315,7 +315,7 @@ iptables -R INPUT 2 -s 192.168.193.0 -d 192.168.193.150 -p tcp --dport 22 -j ACC
 > 指定数据包访问从哪个网卡流入，即设置iptables -nvL中的in标签，-i选项
 
 ```
-# 产看网卡信息
+# 查看网卡信息
 ifconfig
 ip addr
 # 指定数据包流向，从ens33网卡流入访问本机
