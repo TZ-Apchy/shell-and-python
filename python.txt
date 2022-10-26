@@ -476,7 +476,7 @@
 # print(alien_0['color'])
 # new_points = alien_0['point']
 # print(f'you just earned {new_points} points!')
-# # 集合中有相同的值时，print的结果不会报错，结果只会显示一个
+# 集合中有相同的值时，print的结果不会报错，结果只会显示一个
 # c = {3, 3}
 # # 字典中有两个相同的键时，print的结果并不会报错，但结果会显示后者
 # a = {'b': 3,'b': 4}
@@ -552,14 +552,125 @@
 
 # a, b = (3, 5)
 # print(type(a), a, b)
-user_0 = {
-    'usename': 'efermi',
-    'first': 'enrixo',
-    'last': 'fermi',
-    }
-print(user_0.keys(), user_0.values(), user_0.items(), type(user_0.items()), sep="\n")
-for key, value in user_0.items():
-    print(f"Key: {key}")
-    print(f"Value: {value}\n")
+# user_0 = {
+#     'usename': 'efermi',
+#     'first': 'enrixo',
+#     'last': 'fermi',
+#     }
+# print(user_0.keys(), user_0.values(), user_0.items(), type(user_0.items()), sep="\n")
+# for key, value in user_0.items():
+#     print(f"Key: {key}")
+#     print(f"Value: {value}\n") 
 
+# def fun1():
+#     return [lambda x : i * x for i in range(4)]
+#
+#
+# print([m(2) for m in fun1()])
+
+# a = 1
+# a_b = []
+#
+#
+# def sample_func():
+#     a = 2
+#     a_b.append(1)
+#
+#
+# if __name__ == "__main__":
+#     sample_func()
+#     print(a, a_b)
+
+# b = 6
+# c = 6
+# d = 6
+# a = ((b + c)*d - 5)*6
+
+# int = 3
+# del int
+# print(int(3.14))
+# print(1.0 - 0.8)
+# print(10/5)
+#
+# dic = {'tom': 97, 'lu': 98, 'jerry': 76}
+# # 可以对键或值进行临时排序
+# print(dic.keys(), sorted(dic.keys()))
+# print(dic.values(), sorted(dic.values()))
+# print(dic.items())
+# for name, age in dic.items():
+#     print(name, age, sep=":")
+# for name1 in dic.keys():
+#     print(name1)
+# # 遍历字典会默认遍历所有的键
+# for name2 in dic:
+#     print(name2)
+
+# # 集合中的每个元素都是独一无二的
+# # dic = {'tom': 97, 'lu': 98, 'jerry': 98}
+# # a = set(dic.values())
+# # print(a)
+
+# # 字典列表
+# alien_0 = {'color': 'green', 'point': 5}
+# alien_1 = {'color': 'yellow', 'point': 10}
+# alien_2 = {'color': 'red', 'point': 15}
+# aliens = [alien_0, alien_1, alien_2]
+# for alien in aliens:
+#     print(alien)
+
+# # 这样创建的外星人特征一样，不太实际
+# aliens = []
+# for alien_number in range(30):
+#     new_alien = {'color': 'green', 'point': 5, 'speed': 'slow'}
+#     aliens.append(new_alien)
+# for alien in aliens[:5]:
+#     print(alien)
+# print("...")
+# print(f"Total number of aliens: {len(aliens)}")
+
+# # 修改前三个外星人的特征
+# aliens = []
+# for alien_number in range(30):
+#     new_alien = {'color': 'green', 'point': 5, 'speed': 'slow'}
+#     aliens.append(new_alien)
+# for alien in aliens[:3]:
+#     if alien['color'] == 'green':
+#         alien['color'] = 'yellow'
+#         alien['speed'] = 'medium'
+#         alien['point'] = 10
+# for alien in aliens[:5]:
+#     print(alien)
+# print("...")
+
+# # 字符串太长，可以考虑加引号换行
+# pizza = {
+#     'crust': 'thick',
+#     'toppings': ['mushrooms', 'extra cheese'],
+#     }
+#
+# print(f"You ordered a {pizza['crust']}-crust pizza "
+#       "with the following toppings:")
+# for topping in pizza['toppings']:
+#     print("\t" + topping)
+
+# message = input("Tell me something, and I will repeat it back to you: ")
+# print(message)
+
+# name = input("Please enter your name: ")
+# print(f"\nHello, {name}!")
+
+# prompt = "If you tell us who you are, we can personalize the message you see."
+# prompt += "\nWhat is your first name? "
+# name = input(prompt)
+# print(f"\nHello, {name}")
+
+# # input输入的为字符串
+# age1 = input("How old are you? ")
+# print(age1, type(age1))
+# age1 = int(age1)
+# print(age1, type(age1))
+# # 也可以利用int函数包裹在inout函数外面，效果一样
+# age2 = int(input("How old are you? "))
+# print(age2, type(age2))
+# print(age2 >= 18)
 
