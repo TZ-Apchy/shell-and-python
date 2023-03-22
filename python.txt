@@ -674,3 +674,183 @@
 # print(age2, type(age2))
 # print(age2 >= 18)
 
+# current_number = 1
+# while current_number <= 5:
+#     print(current_number)
+#     current_number +=1
+
+# prompt = "\nTell me something, and I will repeat it back to you:"
+# prompt += "\nEnter 'quit' to end the program. "
+# message = ""
+# while message != 'quit':
+#     message = input(prompt)
+#     if message != 'quit':
+#         print(message)
+
+# prompt = "\nTell me something, and I will repeat it back to you:"
+# prompt += "\nEnter 'quit' to end the program. "
+# active = True
+# while active:
+#     message = input(prompt)
+#     if message == "quit":
+#         active = False
+#     else:
+#         print(message)
+
+# import math
+#
+#
+# def cal_vol(radius,height):
+#     vol = math.pi * pow(radius,2) * height
+#     return vol
+#
+#
+# if __name__ == '__main__':
+#     print(cal_vol(2,4))
+
+# # floor返回数字的下舍整数
+# import math
+# print(math.floor(-45.73))
+# print(math.floor(45.73))
+
+
+# import math
+# import argparse  # 1、导入argpase包
+#
+#
+# def parse_arg():
+#     parse = argparse.ArgumentParser(description='Calculate cylinder volume')  # 2、创建参数对象
+#     parse.add_argument('radius', type=int, help='Radius of Cylinder')  # 3、往参数对象添加参数
+#     parse.add_argument('height', type=int, help='height of Cylinder')
+#     args = parse.parse_args()  # 4、解析参数对象获得解析对象
+#     return args
+#
+#
+# def cal_vol(radius, height):
+#     vol = math.pi * pow(radius, 2) * height
+#     return vol
+#
+#
+# if __name__ == '__main__':
+#     args = parse_arg()
+#     print(cal_vol(args.radius, args.height))  # 5、使用解析对象.参数获取使用命令行参数
+
+# for i in range(4):
+#     print(i)
+#     i = 2
+
+
+# # 浮点数的操作
+# # 1、将浮点数以四舍五入的方式进行取整，也可以四舍五入到小数点后几位
+# a = 5.46
+# b = 5.64
+# c = 5
+# print(round(a, 1), round(b, 1), round(c, 1))   # 是舍五入，保留的小数位数可选
+# print(round(8.6))
+# print(round(8.5))   #  这里结果为8
+
+# # 2、向下取整
+# # 方法一：使用 math 模块下的 floor(x) 方法
+# import math
+# d = 5.46
+# e = 5.64
+# f = 5
+# print(math.floor(d), math.floor(e), math.floor(f))  # 为浮点数时向下取整，整数则不变
+
+# # 方法二：使用 math 模块下的 trunc(x) 方法，截取整数部分并返回
+# import math
+# g = 5.46
+# h = 5.64
+# i = 5
+# print(math.trunc(g), math.trunc(h), math.trunc(i))
+
+# # 方法三：最直接的方法，将浮点数类型转化为整数类型，只会保留整数部分，即向下取整结果
+# j = 5.46
+# k = 5.64
+# l = 5
+# print(int(j), int(k), int(l))
+
+# # # 3、向上取整
+# # 使用 math 模块下的 ceil(x) 方法
+# import math
+# m = 5.46
+# n = 5.64
+# o = 5
+# print(math.ceil(m), math.ceil(n), math.ceil(o))  # 为浮点数时则 向上取整，为整数时直接返回，不做任何更改
+
+# print(0.1 + 0.2)
+# a = (1, 2, 3)
+# b = (2, 4, 5)
+# print(b + a)   # 元组能相加，不能想减
+# print(list(a))   # 元组转换成列表
+# c = [1, 2, 3, 4]
+# d = [3, 6]
+# print(c + d)  # 列表能相加，不能相减
+# e = {1, 2, 3, 4}
+# f = {3, 6}
+# print(e - f)  # 集合能相减，不能相加
+
+# print(100 and 200)
+# print(100 and 0)
+# print(0 and 100)
+# print(0 and 0)
+# print(100 or 200)
+# print(100 or 0)
+# print(0 or 100)
+# print(0 or 0)
+
+# # return会将值存储到内存中，而print则是将结果回显到控制台
+# def max_num(b, c):
+#     if b > c:
+#         # return b
+#         print(b)
+#     else:
+#         return c
+#
+#
+# max_num(9, 7)
+# print(max_num(4, 7))
+
+# import math
+# import argparse  # 1、导入argpase包
+#
+#
+# def parse_args():
+#     parse = argparse.ArgumentParser(description='Calculate cylinder volume')  # 创建参数对象
+#     parse.add_argument('--radius', default=2, type=int, help='Radius of Cylinder')  # 通过在参数名前加--，设置为可选参数，往参数对象添加参数
+#     parse.add_argument('--height', default=4, type=int, help='height of Cylinder')
+#     args = parse.parse_args()  # 4、解析参数对象获得解析对象
+#     return args
+#
+#
+# def cal_vol(radius, height):
+#     vol = math.pi * pow(radius, 2) * height
+#     return vol
+#
+#
+# if __name__ == '__main__':
+#     args = parse_args()
+#     print(cal_vol(args.radius, args.height))  # 使用解析对象.参数获取使用命令行参数，这里都为可选参数
+
+# import math
+# import argparse  # 导入argpase包
+#
+# # 当通过设置required=True后，无论参数是否是可选参数，都必须输入
+# def parse_args():
+#     parse = argparse.ArgumentParser(description='Calculate cylinder volume')  # 创建参数对象
+# 往参数对象添加参数
+#     parse.add_argument('-r', '--radius', default=2, type=int, metavar='', required=True, help='Radius of Cylinder')
+#     parse.add_argument('-H', '--height', default=4, type=int, metavar='', required=True, help='height of Cylinder')
+#     args = parse.parse_args()  # 4、解析参数对象获得解析对象
+#     return args
+#
+#
+# def cal_vol(radius, height):
+#     vol = math.pi * pow(radius, 2) * height
+#     return vol
+#
+#
+# if __name__ == '__main__':
+#     args = parse_args()
+#     print(cal_vol(args.radius, args.height))  # 使用解析对象.参数获取使用命令行参数，这里为必选参数，尽管有默认值
+
