@@ -854,3 +854,44 @@
 #     args = parse_args()
 #     print(cal_vol(args.radius, args.height))  # 使用解析对象.参数获取使用命令行参数，这里为必选参数，尽管有默认值
 
+# # python中的循环终止
+# # return：只能出现在定义的函数体中，作用为终止函数的执行，并返回函数的值
+# def test1(n):
+#     for i in range(n):
+#         return i
+#
+#
+# print(test1(10))
+# # continue：退出当前循环，继续下一次的循环
+# for i in 'python':
+#     if i == 'h':
+#         continue
+#     print(i)
+# # break：退出当前所在的循环体---例1
+# for j in 'python':
+#     if j == 'h':
+#         break
+#     print(j)
+# # break：这里只退出了形参m所在的循环体，而k所在的循环体还会继续执行--例2
+# for k in range(2):
+#     print(k)
+#     for m in 'python':
+#         if m == 'h':
+#             break
+#         print(m)
+# # exit：退出整个循环脚本
+# for i in range(2):
+#     # print(i, end="")  # end=''表示不换行输出
+#     print(i)
+#     for j in 'python':
+#         if j == 'h':
+#             exit()
+#         print(j)
+# print("end...")
+# # pass：空语句，为了保持程序结构的完整性，简而言之pass就是占据一个位置，当你没有想好函数的内容时可以用pass来填充，使程序
+# # 可以正常运行，并不会报错
+# def sum1():
+#     pass
+#
+#
+# sum1()
