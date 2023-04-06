@@ -917,3 +917,15 @@
 # e(1, "tz")
 # e(1, "tang", "zhi")
 # print(e(c=1))  # 这里传的关键字实参
+
+# # 任意数量的关键字实参
+# def build_profile(first, last, **user_info):
+#     user_info['first_name'] = first
+#     user_info['last_name'] = last
+#     return user_info
+#
+#
+# user_profile = build_profile('albert', 'einstein', location='princeton', field='physics')  # 关键字实参
+# print(user_profile)
+
+
