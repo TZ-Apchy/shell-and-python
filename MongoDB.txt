@@ -1,0 +1,48 @@
+use test;
+db.a.insert([
+{item:"journal",qty:25,size:{h:14,w:21,uom:"cm"},status:"A",tags:["blank","red"]},
+{item:"notebook",qty:50,size:{h:8.5,w:11,uom:"in"},status:"A",tags:["red","blank"]},
+{item:"paper",qty:100,size:{h:8.5,w:11,uom:"in"},status:"D",tags:["red","blank","plain"]},
+{item:"planner",qty:75,size:{h:22.85,w:30,uom:"cm"},status:"D",tags:["blank","red"]},
+{item:"postcard",qty:45,size:{h:10,w:15.25,uom:"cm"},status:"A",tags:["blue"]}
+]);
+db.a.find();
+db.a.find({status:"A"},{item:1,status:1});
+db.a.find({item:"paper"},{item:1,status:1,_id:0});
+db.a.find({},{item:0,status:0});
+db.a.find({},{"size.h":1,_id:0});
+db.a.find().sort({status:1});
+db.a.updateMany({},{$inc:{qty:20}});
+db.a.updateMany({},{$unset:{status:1}});
+db.a.deleteMany({item:"notebook"});
+db;
+use test;
+db.a.drop();
+use test;
+db.x.insert([
+{name:"张三"},
+{name:"李四"},
+{name:"王五"}
+]);
+db.x.find();
+db.x.deleteMany({$and:[{name:"张三"},{name:"李四"},{name:"王五"}]});
+//use test;
+/*show collections;*/
+db.product.find({director:"zhangyimou"});
+db.product.find({director:{$nin:["zhangyimou","chengkaige"]}});
+db.product.find({$and:[{price:{$gte:40}},{price:{$lte:280}}]});
+db.product.find({price:{$gte:40,$lte:280}});
+db.product.find({$and:[{item:"ticket"},{director:"fengxiaogang"}]},{_id:0});
+db.product.find({$or:[{item:"ticket"},{price:{$gt:280}}]},{_id:0});
+
+//use test;
+db.cc.find({item:null});//查询item字段为空或没有item字段的文档信息
+db.cc.find({item:{$type:10}},{_id:0});//查询item字段为空的文档信息
+db.cc.find({item:{$exists:false}});//查询没有item字段的文档信息
+db.product.update({name:"yingxiong"},{$set:{price:55}});//不加$set会使得除_id字段的其他字段都被覆盖，看不到其他信息
+db.product.deleteOne({item:"ticket"});//删除一条满足条件的记录，如果有多条只会删除最上面一条，可以用deleteMany删除多条
+db.createCollection("aa");//创建集合
+db.aa.drop();//删除集合
+db.dropDatabase();//删除当前数据库，需谨慎操作
+
+

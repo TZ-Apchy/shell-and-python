@@ -1,0 +1,124 @@
+USE company;
+CREATE DATABASE company;
+USE company;
+CREATE TABLE gyb(
+id VARCHAR(5) PRIMARY KEY,
+name VARCHAR(10) NOT NULL,
+age INT,
+bumen VARCHAR(10)
+);
+CREATE TABLE gzb(
+id VARCHAR(5),
+sal FLOAT,
+CONSTRAINT tz FOREIGN KEY(id) REFERENCES gyb(id)
+);
+INSERT INTO gyb VALUES
+('001','张三',25,'办事员'),
+('002','李四',26,'销售员'),
+('003','赵钱',21,'经理'),
+('004','孙李',35,'办事员');
+INSERT INTO gzb VALUES
+('001',3000),
+('002',3500),
+('003',2500),
+('004',4000);
+
+
+SELECT name FROM gyb WHERE id IN(SELECT id FROM gzb WHERE sal=3000); 
+
+SELECT name,age,sal FROM gyb RIGHT JOIN gzb ON gyb.id=gzb.id;
+
+SELECT sal FROM gzb WHERE id in(SELECT id FROM gyb WHERE age BETWEEN 25 AND 35) ORDER BY id DESC;
+
+SELECT bumen FROM gyb GROUP BY bumen HAVING count(*)>10;
+
+SELECT * FROM gyb WHERE id=(SELECT id FROM gzb ORDER BY sal DESC  LIMIT 0,1) union SELECT * FROM gyb WHERE id=(SELECT id FROM gzb ORDER BY sal DESC  LIMIT 1,1) UNION SELECT * FROM gyb WHERE id=(SELECT id FROM gzb ORDER BY sal DESC  LIMIT 2,1);
+
+SELECT * FROM gyb,gzb WHERE gyb.id=gzb.id ORDER BY sal DESC LIMIT 3;
+
+
+
+use test;
+alter table person1 modify id int(11) primary key auto_increment;#增加自增约束类型必须为int型
+select kcnum,grade FROM score where grade>85; GROUP BY kcnum;
+SELECT jsnum FROM teacher WHERE bumen="计算机系";
+SELECT kcnum FROM course WHERE jsnum in(SELECT jsnum FROM teacher WHERE bumen="计算机系");
+SELECT grade FROM score where kcnum in(SELECT kcnum FROM course WHERE jsnum in(SELECT jsnum FROM teacher WHERE bumen="计算机系"));
+SELECT * FROM teacher;
+SELECT * FROM teacher WHERE bumen="计算机系" AND zhichen NOT IN (SELECT zhichen FROM teacher WHERE bumen="电子工程系") UNION SELECT * FROM teacher WHERE bumen="电子工程系" AND zhichen NOT IN (SELECT zhichen FROM teacher WHERE bumen="计算机系");
+SELECT kcnum,xsnum,grade FROM score WHERE kcnum="3-105" AND grade>ANY(SELECT grade FROM score WHERE kcnum="3-245") ORDER BY grade DESC;
+SELECT kcnum,xsnum,grade FROM score WHERE kcnum="3-105" AND grade>ALL(SELECT grade FROM score WHERE kcnum="3-245");
+SELECT * FROM score AS a WHERE grade<(SELECT avg(grade) FROM score AS b WHERE a.kcnum=b.kcnum);#AS可以省略或用空格代替
+SELECT kcnum 课程,avg(grade) FROM score GROUP BY kcnum;#AS可以省略或用空格代替
+select * from student where xsname like '张%' or xsname like '李%';-- 此时后面的xsname虽和前面的一样也不能省去
+SELECT YEAR(NOW());#查看当前年份
+SELECT xsname,YEAR(NOW())-YEAR(xsbirthday) AS 年龄 FROM student;#查询年龄,别名引号可以省略
+SELECT MAX(xsbirthday) AS "最大",MIN(xsbirthday) AS "最小" FROM student;#根据年份的大小而定
+SELECT kcname FROM course WHERE jsnum IN(SELECT jsnum FROM teacher WHERE jssex="男");
+CREATE TABLE grade(
+    low INT(3),
+    upp INT(3),
+    grade CHAR(1)
+);
+INSERT INTO grade VALUES(90,100,'A');
+INSERT INTO grade VALUES(80,89,'B');
+INSERT INTO grade VALUES(70,79,'C');
+INSERT INTO grade VALUES(60,69,'D');
+INSERT INTO grade VALUES(0,59,'E');
+DELETE FROM grade;
+ALTER TABLE grade CHANGE grade rank char(1);
+SELECT xsnum,kcnum,rank FROM score,grade WHERE grade BETWEEN low and upp;#查询所在等级
+CREATE TABLE person(
+    id INT,
+    name VARCHAR(20),
+    cardID INT
+);
+CREATE TABLE card(
+    id INT,
+    name VARCHAR(20)
+);
+SHOW TABLES;
+INSERT INTO card VALUES(1,'饭卡'),(2,'建行卡'),(3,'农行卡'),(4,'工行卡'),(5,'邮政卡');
+SELECT * FROM card;
+INSERT INTO person VALUES(1,'张三',1),(2,'李四',3),(3,'王五',6);
+SELECT * FROM person;
+
+SELECT * FROM person INNER JOIN card ON person.cardID=card.id;
+SELECT * FROM person JOIN card ON person.cardID=card.id;#查询结果和上面的一样(内连接)
+
+SELECT * FROM person LEFT JOIN card ON person.cardID=card.id;#左边表中数据会全部显示出来,而右边表中数据按条件显示,没有就补NULL(左外链接)
+SELECT * FROM person LEFT OUTER JOIN card ON person.cardID=card.id;#和上面结果一样
+
+SELECT * FROM person RIGHT JOIN card ON person.cardID=card.id;#右边表中数据会全部显示出来,而左边表中数据按条件显示,没有就补NULL(右外链接)
+SELECT * FROM person RIGHT OUTER JOIN card ON person.cardID=card.id;#和上面结果一样
+
+SELECT * FROM person LEFT JOIN card ON person.cardID=card.id UNION SELECT * FROM person RIGHT JOIN card ON person.cardID=card.id;#MySQL不支持FULL JOIN,只能通过UNION来连接LEFT JOIN和RIGHT JOIN
+select d_id from employee union all select d_id from department;#其中UNION表示可以去除重复数据，UNION ALL则表示不去除重复数据
+
+SELECT @@autocommit;#查看事务是否开启
+SHOW DATABASES;
+CREATE TABLE user(
+id INT PRIMARY KEY,
+name VARCHAR(20),
+money INT
+);
+INSERT INTO user VALUES(1,'a',1000);
+INSERT INTO user VALUES(2,'b',1000);
+
+BEGIN;
+UPDATE user set money=money-100 WHERE name='a';
+UPDATE user set money=money+100 WHERE name='b';
+ROLLBACK;
+SELECT * FROM user;
+
+USE test;
+SELECT avg(grade),kcnum FROM score GROUP BY kcnum;
+#下面三条语句查询结果相同
+SELECT student.xsnum,xsname,grade FROM student INNER JOIN score ON student.xsnum=score.xsnum;
+SELECT student.xsnum,xsname,grade FROM student,course,score WHERE student.xsnum=score.xsnum AND course.kcnum=score.kcnum;
+SELECT student.xsnum,xsname,grade FROM student,score WHERE student.xsnum=score.xsnum;
+
+-- 正则查询
+SELECT * FROM student WHERE xsname REGEXP '^王';#查询姓名以王开头的记录
+SELECT * FROM student WHERE xsclass REGEXP '1$';#查询班级以1结尾的记录
+
