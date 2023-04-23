@@ -928,4 +928,106 @@
 # user_profile = build_profile('albert', 'einstein', location='princeton', field='physics')  # 关键字实参
 # print(user_profile)
 
+# def func(*args, **kwargs):
+#     print("args:", args, "  kwargs:", kwargs)
+#
+# func(4, 5)
+# func(name="Tom", age=20)
+# func(4, 5, name="Tom", age=20)
+
+# # 类和对象
+# class A():
+#     def run(self):
+#         print("running")
+#     def run2(self,c):
+#         c.run()
+#         c.run()
+#
+#
+# class B(A):
+#     def run(self):
+#         print("run - run")
+#
+#
+# class C(A):
+#     def run(self):
+#         print("run + run")
+# a= A()
+# b = B()
+# c = C()
+# a.run()
+# b.run()
+# c.run()
+# b.run2(a)
+# b.run2(b)
+# b.run2(c)
+
+# class Person():
+#     def __init__(self, age):
+#         self.age = age
+#     # 构造方法
+#     def __new__(cls, age):
+#         if age > 50:
+#             return None
+#         else:
+#             return object.__new__(cls)
+#     def say_hi(self):
+#         print(f"我今年{self.age}岁了")
+#
+# # obj2 = Person(51)  # 会报错
+# # obj2.say_hi()
+# obj1 = Person(5)
+# obj1.say_hi()
+
+# class Person():
+#     def say_hi(self):
+#         print("我是人类")
+#
+# class A:
+#     def say_hi(self):
+#         print("I am A")
+#
+# # 就近原则
+# class B(A,Person):
+#     pass
+#
+# obj1 = B()
+# obj1.say_hi()
+
+# class Person():
+#     def __init__(self, name):
+#         self.name = name
+#
+#     def say(self, *args):
+#         if len(args) == 1:
+#             return self.say1(*args)
+#         if len(args) == 2:
+#             return self.say2(*args)
+#     def say1(self, i):
+#         print(i)
+#
+#     def say2(self, i, j):
+#         print(i + j)
+#
+#
+# obj1 = Person("Tom")
+# obj1.say(10)
+# obj1.say(10, 20)
+
+# class Dog():
+#
+#     def __init__(self, name, age):  # 初始化属性name和age
+#         self.name = name
+#         self.age = age
+#
+#     def sit(self):
+#         print(f"{self.name} is now sitting.")
+#
+#     def roll_over(self):
+#         print(f"{self.name} rolled over!")
+#
+# d = Dog("tom", 10)
+# d.sit()
+# # print(d.name)  # 表示调用当前对象的name属性
+# d.roll_over()
 
