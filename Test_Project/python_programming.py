@@ -1031,3 +1031,34 @@
 # # print(d.name)  # 表示调用当前对象的name属性
 # d.roll_over()
 
+# class Car():
+#     def __init__(self, make, model, year):
+#         self.make = make
+#         self.model = model
+#         self.year = year
+#         self.odometer_reading = 0  # 可在init方法中给属性指定默认值
+#     def get_descriptive_name(self):
+#         long_name = f"{self.year} {self.make} {self.model}"
+#         return long_name.title()
+#     def read_odometer(self):
+#         print(f"This car has {self.odometer_reading} miles on it.")
+#     def update_odometer(self, mileage):
+#         if mileage >= self.odometer_reading:
+#             self.odometer_reading = mileage
+#         else:
+#             print("You can't roll back an odometer!")  # 加了一个if判断，禁止回调里程数据
+#     def increment_odometer(self, miles):
+#         self.odometer_reading += miles
+#
+#
+# my_new_car = Car("audi", "a4", 2019)
+# print(my_new_car.get_descriptive_name())
+# my_new_car.read_odometer()
+# my_new_car.odometer_reading = 30  # 通过实例访问，直接修改属性的值
+# my_new_car.read_odometer()
+# my_new_car.update_odometer(40)  # 通过update_odometer方法来修改属性的值
+# my_new_car.read_odometer()
+# my_new_car.increment_odometer(100)  # 通过increment_odometer方法对属性的值进行递增，这里在原来基础上增加了100
+# my_new_car.read_odometer()
+# my_new_car.increment_odometer(200)  # 通过increment_odometer方法对属性的值再次进行递增，这里在原来基础上增加了200
+# my_new_car.read_odometer()

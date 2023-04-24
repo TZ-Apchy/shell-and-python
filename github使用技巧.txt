@@ -11,8 +11,8 @@ https://gitpod.io/#/github.com/TZ-Apchy/lede
 get email updates可以设置定期推送自己感兴趣的项目(入口点击左侧github图标，接着点击explore即可到达指定页面进行设置)
 
 git使用：
-配置用户：git config --global user.name "zhangsan" 
-配置邮箱：git config --global user.email "zhangsan@qq.com"
+配置用户：git config --global user.name "tangzhi" 
+配置邮箱：git config --global user.email "2285561193@qq.com"
 查看配置信息：git config -l
 
 初始化本地仓库：git init
