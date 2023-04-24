@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88e01aa6-d7c5-411d-b4e0-7ccc459cf3de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python_programming.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_programming.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../github使用技巧.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../github使用技巧.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_programming.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="1059" column="16" selection-start-line="1059" selection-start-column="16" selection-end-line="1059" selection-end-column="16" />
+            <state relative-caret-position="210">
+              <caret line="1064" lean-forward="true" selection-start-line="1064" selection-end-line="1064" />
             </state>
           </provider>
         </entry>
@@ -31,6 +29,14 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>＇</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>&quot;</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -45,7 +51,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="150" />
-    <option name="y" value="51" />
+    <option name="y" value="50" />
     <option name="width" value="1615" />
     <option name="height" value="980" />
   </component>
@@ -150,14 +156,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="120" y="41" width="1292" height="784" extended-state="0" />
+    <frame x="120" y="40" width="1292" height="784" extended-state="0" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14785373" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33383915" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.36115327" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -175,8 +181,8 @@
     <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$PROJECT_DIR$/python_programming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="1059" column="16" selection-start-line="1059" selection-start-column="16" selection-end-line="1059" selection-end-column="16" />
+        <state relative-caret-position="210">
+          <caret line="1064" lean-forward="true" selection-start-line="1064" selection-end-line="1064" />
         </state>
       </provider>
     </entry>

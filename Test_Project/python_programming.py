@@ -1062,3 +1062,12 @@
 # my_new_car.read_odometer()
 # my_new_car.increment_odometer(200)  # 通过increment_odometer方法对属性的值再次进行递增，这里在原来基础上增加了200
 # my_new_car.read_odometer()
+
+# # decimal可以解决python中浮点数运算的精度问题
+# from decimal import Decimal
+# print(0.1 + 0.2)
+# print(Decimal("0.1") + Decimal("0.2"))
+# print(8.7 / 10)
+# print(Decimal("8.7") / Decimal("10"))
+# print(0.8 - 0.2)
+# print(Decimal("0.8") - Decimal("0.2"))
