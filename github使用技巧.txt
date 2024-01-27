@@ -72,6 +72,4 @@ ssh-keygen -t rsa -C "自己注册github邮箱"
 如：C:\Users\TZ\.ssh\id_rsa.pub
 去github上配置
 Settings-->SSH and GPG keys-->New SSH key
-11
-
 
