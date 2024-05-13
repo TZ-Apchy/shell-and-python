@@ -3,7 +3,7 @@
 # cy1 = a.copy()
 # cy2 = copy.copy(a)
 # cy3 = copy.deepcopy(a)
-# # a.append(9)
+# a.append(9)
 # # a.insert(3,6)
 # a[5].append(1)
 # a[6].update({"age": 20})
@@ -1071,3 +1071,78 @@
 # print(Decimal("8.7") / Decimal("10"))
 # print(0.8 - 0.2)
 # print(Decimal("0.8") - Decimal("0.2"))
+
+
+# # 函数作用域：在Python中，只有模块（module），类（class）以及函数（def、lambda）才会引入新的作用域，其它的代码块（如if、try、for等）是不会引入新的作用域的
+# for i in range(3):
+#     print(i)
+# print(i) # for循环改变不了作用域属性
+
+# b=[i for i in range(5) if i % 2 == 0]
+# print(b)
+# # print(i) # 列表生成式中的变量i在python3中是局部变量，在python2中会溢出为全局变量
+
+# # <1> 作用域范围：local（局部作用域） < enclosing（嵌套作用域） < global（全局作用域） < built-in（内置作用域）
+# # <2> 调用优先级：local > enclosing > global > built-in
+
+# a=3
+# def fun():
+#     a=4
+#     return a
+# print(fun())
+# print(a)
+
+# b=1 # 全局变量
+# def fun():
+#     b=2 # 在fun中定义的局部变量
+#     def fun1():
+#         b=3 # 在fun1中定义的局部变量
+#         print(b)
+#     fun1() # 先在fun1中找变量b，如果没有再去上层中去找，即从当前作用域中由内向外找
+#     print(b)
+#
+# fun()
+# print(b)
+
+# s=0
+# def fun():
+#     global s # 使下面的s变成了全局变量
+#     s=5
+#     for i in range(5):
+#         s+=i
+#
+# fun()
+# print(s) # 这里打印的s的值是全局变量中定义的s，如果在局部变量中用了global，会使其变成全局变量
+
+# # global的使用
+# s=0
+# def fun():
+#     s=1
+#     def fun1():
+#         global s # 只会改变当前作用域中的s，即下面的s=2变成了全局变量
+#         s=2
+#         for i in range(5):
+#             s+=i
+#     fun1()
+#     print(s)
+#
+#
+# fun()
+# print(s)
+
+# # nonlocal的使用
+# s=0
+# def fun():
+#     s=1
+#     def fun1():
+#         nonlocal s # 把当前作用域的s=2和上一层的s=1绑定
+#         s=2
+#         for i in range(5):
+#             s+=i
+#     fun1()
+#     print(s) # 由于nonlocal的绑定关系，使得s=1变成了s=2，并参与了运算
+#
+#
+# fun()
+# print(s)
+
