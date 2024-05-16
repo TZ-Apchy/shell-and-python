@@ -1146,3 +1146,80 @@
 # fun()
 # print(s)
 
+# a=float("NaN")
+# b=float("NaN")
+# print(a is b,a==b,a!=b)
+# print(id(a),id(b))
+
+# # nan是一种特殊的浮点数值，表示一个无效的或不可表示的数值。当某些数学运算无法产生有意义的结果时，Python会将结果设置为nan。nan的特点是在任何数值比较操作中都返回False
+# a=float("nan")
+# b=float('nan')
+# print(a is b,a == b)
+# result = float('inf') * 0 # 无穷大乘除
+# print(result)
+
+# # random函数用法
+# import random
+# print(random.random()) # 返回随机生成的一个浮点数，范围在[0,1)之间
+
+# print(random.uniform(1,3)) # 返回随机生成的一个浮点数，范围在[a, b)之间
+
+# print(random.randint(1,3)) # 生成指定范围内的整数，包括左右边界
+
+# print(random.randrange(10,16,3)) # random.randrange([start],stop[,step])：用于从指定范围内按指定基数递增的集合中获取一个随机数
+
+# # random.choice()：从指定的序列中获取一个随机元素
+# print(random.choice('学习a'))   # 从字符串中随机取一个字符
+# print(random.choice(['good', 'hello', 'is', 'hi', 'boy']))   # 从list列表中随机取
+# print(random.choice(('str', 'tuple', 'list')))   # 从tuple元组中随机取
+
+# random.shuffle(x[,random])：用于将一个列表中的元素打乱，随机排序
+# p=['a','b','c']
+# random.shuffle(p)
+# print(p)
+
+# # exec和eval，都属于Python的内置函数，eval()和exec()函数的功能是相似的，都可以执行一个字符串形式的Python代码(代码以字符串的形式提供)，相当于一个Python的解释器；二者不同之处在于，eval()执行完要返回结果，而exec()执行完不返回结果
+# a=10
+# b=20
+# c=30
+# g={'a':6, 'b':8}
+# t={'b':100, 'c':10}
+# print(eval('a+b+c', g, t)) # g(全局命名空间globals)表示全局命名空间，t表示局部命名空间，当它和g中有重复或冲突时，以t(局部命名空间locals)的为准
+
+# d = 1
+# exec("d = 2") # 相当于直接执行d=2
+# print(d)
+# e = exec("2+3") # 相当于直接执行2+3，但是并没有返回值，a应为None
+# print(e)
+# f = eval('2+3') # 执行2+3，并把结果返回给f
+# print(f)
+
+# c="""
+# def fun():
+#     return 100
+# """
+# exec(c)
+# print(fun())
+# age=18
+# b = eval("{'name':'linux','age':age}",{"age":19},locals()) # 如果locals没有被提供，则默认为globals，即age=18
+# print(b)
+# print(globals())
+# print(locals())
+
+
+# def fun(a,b,*c): # *c表示除a和b两个位置参数，其他的构成一个名为c的元组，即下面调用的c=(3,4,5,6)
+#     print(c[0])
+# fun(1,*(2,3),4,5,6) # 实参中带有*号，会将其拆分成位置参数，即*(2,3)会被拆分成1和2两个位置参数2,3，fun(1,*(2,3),4,5,6)等效为fun(1,2,3,4,5,6)
+
+# def fun(x,*y):
+#     for i in y:
+#         print(i,type(i))
+#
+# fun(1,*("m","n")) # 与下面的fun(1,"m","n")等价
+# fun(1,"m","n")
+
+# a=["1230","ABC","123","abc"] # 字符串比较大小可以用ord()查看他们的ASCII值，按字母一一比较
+# print(ord("1"),ord("A"),ord("a"),ord("0")) # 即abc>ABC>1230>123
+# a.sort(reverse=True) # 默认从小到大排列，reverse要求逆序排列，即从大到小排列---依据它们的ASCII值
+# print(a)
+
