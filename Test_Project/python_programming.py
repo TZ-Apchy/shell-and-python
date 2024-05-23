@@ -1223,3 +1223,50 @@
 # a.sort(reverse=True) # 默认从小到大排列，reverse要求逆序排列，即从大到小排列---依据它们的ASCII值
 # print(a)
 
+# def f(x):
+#     return x*x
+# print(f(5))
+
+# f1=(lambda x: x*x)(5)
+# f2=lambda y:y*y
+# print(f1,f2(5),sep="\n")
+
+# def g(x,y):
+#     return x+y
+# print(g(3,4))
+
+# f3=(lambda x,y:x+y)(3,4)
+# f4=lambda x,y:x+y
+# print(f3,f4(3,4),sep="\n")
+
+# # import math
+# def m(a,b,c):
+#     # return lambda x:a*math.pow(x,2)+b*x+c
+#     # return lambda x:a*x*x+b*x+c
+#     return lambda x:a*pow(x,2)+b*x+c
+# n=m(1,-1,2)
+# print(n(5))
+# print(m(1,-1,2)(5))
+
+# def get_sort(age):
+#     return age[1]
+# list1=[]
+# file=open("lianxi.csv","r",encoding="utf-8")
+# for line in file:
+#     line=line.strip() # 删除开头和结尾的空白
+#     # split()函数是Python字符串的内置方法，用于将一个字符串按照指定的分隔符拆分成多个子字符串，并将这些子字符串存储在列表中
+#     arr=line.split(",") # arr是一个列表
+#     # print(arr,type(arr))
+#     n=arr[0]
+#     a=arr[2]
+#     h=arr[3]
+#     list1.append((n,a,h))
+# # list.sort(key=None, reverse=False) key和reverse都是可选参数。
+# # key：用于指定一个函数，根据该函数的返回值对列表进行排序。默认值为None，表示使用列表元素自身的值进行排序
+# # reverse：用于控制排序方式，默认值为False，表示升序，设置为True表示降序
+# # list1.sort(key=get_sort) # 按照函数指定的排序
+# list1.sort(key=lambda age:age[1]) # 和上面的利用函数排序一样，可写成lambda表达式
+# for i in list1:
+#     print(i)
+
+
