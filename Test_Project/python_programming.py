@@ -1248,6 +1248,11 @@
 # print(n(5))
 # print(m(1,-1,2)(5))
 
+# list1=[[1,2,3],[4,5,6],[7,8,9]]
+# list2=lambda x:[z for y in x for z in y]
+# print(list2(list1))
+
+
 # def get_sort(age):
 #     return age[1]
 # list1=[]
@@ -1268,5 +1273,4 @@
 # list1.sort(key=lambda age:age[1]) # 和上面的利用函数排序一样，可写成lambda表达式
 # for i in list1:
 #     print(i)
-
 
