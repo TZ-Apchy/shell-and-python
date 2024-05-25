@@ -747,7 +747,8 @@
 # c = 5
 # print(round(a, 1), round(b, 1), round(c, 1))   # 是舍五入，保留的小数位数可选
 # print(round(8.6))
-# print(round(8.5))   #  这里结果为8
+# print(round(8.5),round(7.5),round(7.54),round(7.55),round(7.56))   #  取整，并且遵循遇5取偶，整数位8即不进位，整数位7为奇数即进位
+# print(round(7.545,1),round(7.546,1),round(7.555,1),round(7.565,1),round(7.555,2))
 
 # # 2、向下取整
 # # 方法一：使用 math 模块下的 floor(x) 方法
@@ -1252,6 +1253,19 @@
 # list2=lambda x:[z for y in x for z in y]
 # print(list2(list1))
 
+# text1 = "Hello.World.Python Java\tC\nGo"
+# print(text1.split())# 默认从左往右分割字符串，maxsplit默认-1，即按全部分隔符分割，和text1.split(maxsplit=-1)等价
+# print(text1.split(maxsplit=-1))
+# print(text1.split("."))
+# print(text1.split(".",1)) # 第二个参数表示最大分割次数，这里1表示分割一次
+# print(text1.rsplit(".",1)) # 从右边第一个，号开始分割1次
+# # 有时，字符串中可能包含连续的分隔符。默认情况下，split()函数会将连续的分隔符视为一个分隔符并忽略中间的空字符串
+# text2="apple,,banana,,grape,,orange"
+# print(text2.split(","))
+# # splitlines()主要用于根据换行符\r（回车）、\r\n（回车并换行）、\n（换行）进行分割
+# text3='path\ra\r\nb\ncd'
+# print(text3.splitlines())
+
 
 # def get_sort(age):
 #     return age[1]
@@ -1259,7 +1273,7 @@
 # file=open("lianxi.csv","r",encoding="utf-8")
 # for line in file:
 #     line=line.strip() # 删除开头和结尾的空白
-#     # split()函数是Python字符串的内置方法，用于将一个字符串按照指定的分隔符拆分成多个子字符串，并将这些子字符串存储在列表中
+#     # split()函数是Python字符串的内置方法，用于将一个字符串按照指定的分隔符拆分成多个子字符串，并将这些子字符串存储在列表中；默认情况下，split()函数会使用所有空白字符作为分隔符，包括空格、制表符、换行符等
 #     arr=line.split(",") # arr是一个列表
 #     # print(arr,type(arr))
 #     n=arr[0]

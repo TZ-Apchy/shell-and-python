@@ -15,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_programming.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="1251" column="12" lean-forward="true" selection-start-line="1251" selection-start-column="12" selection-end-line="1251" selection-end-column="12" />
+            <state relative-caret-position="264">
+              <caret line="751" lean-forward="true" selection-start-line="751" selection-end-line="751" />
             </state>
           </provider>
         </entry>
@@ -40,6 +40,7 @@
       <find>Dog</find>
       <find>spli</find>
       <find>lamb</find>
+      <find>split</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -219,8 +220,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python_programming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="1251" column="12" lean-forward="true" selection-start-line="1251" selection-start-column="12" selection-end-line="1251" selection-end-column="12" />
+        <state relative-caret-position="264">
+          <caret line="751" lean-forward="true" selection-start-line="751" selection-end-line="751" />
         </state>
       </provider>
     </entry>
