@@ -1304,4 +1304,3 @@
 # print(set4)
 # print(set4.pop())
 
-a={1,2,3}
