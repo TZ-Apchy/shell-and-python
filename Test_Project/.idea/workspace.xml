@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88e01aa6-d7c5-411d-b4e0-7ccc459cf3de" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python_programming.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_programming.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_programming.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="751" lean-forward="true" selection-start-line="751" selection-end-line="751" />
+            <state relative-caret-position="260">
+              <caret line="1306" lean-forward="true" selection-start-line="1306" selection-end-line="1306" />
             </state>
           </provider>
         </entry>
@@ -41,6 +42,9 @@
       <find>spli</find>
       <find>lamb</find>
       <find>split</find>
+      <find>round</find>
+      <find>pop</find>
+      <find>有序</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -70,6 +74,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -81,7 +86,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -220,8 +224,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python_programming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="751" lean-forward="true" selection-start-line="751" selection-end-line="751" />
+        <state relative-caret-position="260">
+          <caret line="1306" lean-forward="true" selection-start-line="1306" selection-end-line="1306" />
         </state>
       </provider>
     </entry>
