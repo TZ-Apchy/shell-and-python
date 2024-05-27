@@ -1084,7 +1084,7 @@
 
 # b=[i for i in range(5) if i % 2 == 0]
 # print(b)
-# # print(i) # 列表生成式中的变量i在python3中是局部变量，在python2中会溢出为全局变量
+# print(i) # 列表生成式中的变量i在python3中是局部变量，在python2中会溢出为全局变量
 
 # # <1> 作用域范围：local（局部作用域） < enclosing（嵌套作用域） < global（全局作用域） < built-in（内置作用域）
 # # <2> 调用优先级：local > enclosing > global > built-in
@@ -1093,6 +1093,7 @@
 # def fun():
 #     a=4
 #     return a
+# # print(globals()) # 检查全局作用域中有哪些变量名
 # print(fun())
 # print(a)
 
@@ -1101,11 +1102,11 @@
 #     b=2 # 在fun中定义的局部变量
 #     def fun1():
 #         b=3 # 在fun1中定义的局部变量
-#         print(b)
-#     fun1() # 先在fun1中找变量b，如果没有再去上层中去找，即从当前作用域中由内向外找
-#     print(b)
+#         return b
+#     print(fun1()) # 先在fun1中找变量b，如果没有再去上层中找，即从当前作用域中由内向外找
+#     return b
 #
-# fun()
+# print(fun())
 # print(b)
 
 # s=0
@@ -1119,12 +1120,12 @@
 # print(s) # 这里打印的s的值是全局变量中定义的s，如果在局部变量中用了global，会使其变成全局变量
 
 # # global的使用
-# s=0
+# s=3
 # def fun():
 #     s=1
 #     def fun1():
 #         global s # 只会改变当前作用域中的s，即下面的s=2变成了全局变量
-#         s=2
+#         s=2 # 如果这里的s没有定义则会去找最外层的全局变量s=3并参与运算
 #         for i in range(5):
 #             s+=i
 #     fun1()

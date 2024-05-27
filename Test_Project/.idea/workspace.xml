@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_programming.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="803" column="53" selection-start-line="803" selection-start-column="53" selection-end-line="803" selection-end-column="53" />
+            <state relative-caret-position="367">
+              <caret line="1148" column="1" lean-forward="true" selection-start-line="1148" selection-start-column="1" selection-end-line="1148" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -216,7 +216,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4957627" visible="true" weight="0.101123594" />
@@ -232,7 +232,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32905984" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32763532" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.51846594" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.517094" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -261,10 +261,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-643338342/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="490" column="33" lean-forward="true" selection-start-line="490" selection-start-column="33" selection-end-line="490" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python_programming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="803" column="53" selection-start-line="803" selection-start-column="53" selection-end-line="803" selection-end-column="53" />
+        <state relative-caret-position="367">
+          <caret line="1148" column="1" lean-forward="true" selection-start-line="1148" selection-start-column="1" selection-end-line="1148" selection-end-column="1" />
         </state>
       </provider>
     </entry>
