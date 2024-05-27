@@ -739,6 +739,14 @@
 #     print(i)
 #     i = 2
 
+# # decimal可以解决python中浮点数运算的精度问题
+# from decimal import Decimal
+# print(0.1 + 0.2)
+# print(Decimal("0.1") + Decimal("0.2"))
+# print(8.7 / 10)
+# print(Decimal("8.7") / Decimal("10"))
+# print(0.8 - 0.2)
+# print(Decimal("0.8") - Decimal("0.2"))
 
 # # 浮点数的操作
 # # 1、将浮点数以四舍五入的方式进行取整，也可以四舍五入到小数点后几位
@@ -1063,15 +1071,6 @@
 # my_new_car.read_odometer()
 # my_new_car.increment_odometer(200)  # 通过increment_odometer方法对属性的值再次进行递增，这里在原来基础上增加了200
 # my_new_car.read_odometer()
-
-# # decimal可以解决python中浮点数运算的精度问题
-# from decimal import Decimal
-# print(0.1 + 0.2)
-# print(Decimal("0.1") + Decimal("0.2"))
-# print(8.7 / 10)
-# print(Decimal("8.7") / Decimal("10"))
-# print(0.8 - 0.2)
-# print(Decimal("0.8") - Decimal("0.2"))
 
 
 # # 函数作用域：在Python中，只有模块（module），类（class）以及函数（def、lambda）才会引入新的作用域，其它的代码块（如if、try、for等）是不会引入新的作用域的

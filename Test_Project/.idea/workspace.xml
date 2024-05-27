@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88e01aa6-d7c5-411d-b4e0-7ccc459cf3de" name="Default Changelist" comment="" />
+    <list default="true" id="88e01aa6-d7c5-411d-b4e0-7ccc459cf3de" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_programming.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_programming.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,12 +15,12 @@
     <favorites_list name="Test_Project" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_programming.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="1306" lean-forward="true" selection-start-line="1306" selection-end-line="1306" />
+            <state relative-caret-position="252">
+              <caret line="752" column="10" lean-forward="true" selection-start-line="752" selection-start-column="10" selection-end-line="752" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -42,9 +45,10 @@
       <find>spli</find>
       <find>lamb</find>
       <find>split</find>
-      <find>round</find>
       <find>pop</find>
       <find>有序</find>
+      <find>deci</find>
+      <find>round</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -58,8 +62,8 @@
       <list>
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/os_module.py" />
-        <option value="$PROJECT_DIR$/python_programming.py" />
         <option value="$APPLICATION_HOME_DIR$/helpers/third_party/thriftpy/_shaded_thriftpy/_compat.py" />
+        <option value="$PROJECT_DIR$/python_programming.py" />
       </list>
     </option>
   </component>
@@ -75,6 +79,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -86,7 +91,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -225,7 +229,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32905984" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32763532" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.5185185" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.51846594" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -256,8 +260,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python_programming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="1306" lean-forward="true" selection-start-line="1306" selection-end-line="1306" />
+        <state relative-caret-position="252">
+          <caret line="752" column="10" lean-forward="true" selection-start-line="752" selection-start-column="10" selection-end-line="752" selection-end-column="10" />
         </state>
       </provider>
     </entry>
