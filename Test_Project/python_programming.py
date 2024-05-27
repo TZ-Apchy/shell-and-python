@@ -751,12 +751,17 @@
 # # 浮点数的操作
 # # 1、将浮点数以四舍五入的方式进行取整，也可以四舍五入到小数点后几位
 # a = 5.46
+# a = 5.46
 # b = 5.64
 # c = 5
 # print(round(a, 1), round(b, 1), round(c, 1))   # 是舍五入，保留的小数位数可选
 # print(round(8.6))
 # print(round(8.5),round(7.5),round(7.54),round(7.55),round(7.56))   #  取整，并且遵循银行家舍入法，4舍6进5取偶，整数位8即不进位，整数位7为奇数即进位
 # print(round(7.545,1),round(7.546,1),round(7.555,1),round(7.565,1),round(7.555,2))
+# from decimal import Decimal
+# print(Decimal(7.555),round(7.555,2))
+# print(Decimal(2.2+3.5))
+# print(Decimal(1.555),round(1.555,2))
 
 # # 2、向下取整
 # # 方法一：使用 math 模块下的 floor(x) 方法
@@ -787,17 +792,16 @@
 # o = 5
 # print(math.ceil(m), math.ceil(n), math.ceil(o))  # 为浮点数时则 向上取整，为整数时直接返回，不做任何更改
 
-# print(0.1 + 0.2)
 # a = (1, 2, 3)
 # b = (2, 4, 5)
-# print(b + a)   # 元组能相加，不能想减
-# print(list(a))   # 元组转换成列表
+# print(b + a)   # 元组能相加，不能相减
+# # print(list(a))   # 元组转换成列表
 # c = [1, 2, 3, 4]
 # d = [3, 6]
 # print(c + d)  # 列表能相加，不能相减
 # e = {1, 2, 3, 4}
 # f = {3, 6}
-# print(e - f)  # 集合能相减，不能相加
+# print(e|f,e&f,e^f,e-f)  # 集合能相减，不能相加；e|f表示并集，e&f表示交集，e^f表示只在一个集合中出现的元素
 
 # print(100 and 200)
 # print(100 and 0)
