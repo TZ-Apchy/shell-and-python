@@ -172,12 +172,15 @@
 # print(a, id(a))
 # a.append(3)
 # print(a, id(a))
-# d1 = {'name': 'zhangsan', 'age': 20}
+# d1 = {'name': 'Tom', 'age': 20}
 # print(id(d1))
 # # d1["lan"]=2
 # # d1['lan'] = d1.get('lan',2)
-# d1.setdefault('lan', 2)
+# d1.setdefault('lan', 2) # 字典d1本来并没有键为'lan'的元素，使用setdefault方法可以添加一个新的键'lan'和默认值2
+# d1.setdefault("sex") # 若缺少键"sex"的默认值，则默认值为None
+# f1=d1.setdefault("name","jerry") # 字典d1已存在键'name'，使用setdefault方法仍然会返回键'name'对应的值Tom（非jerry），不会去修改它的默认值
 # print(d1, id(d1), sep="   ")
+# print(d1,f1)
 # # 不可变类型：数字、字符串、元组
 # i = 1
 # print(id(i))
