@@ -1317,3 +1317,4 @@
 # # res1=str1.find("Python") # find函数会在str1字符串中查找”python“字符串，找到则返回其起始索引值，找不到则返回-1
 # # res2=str1.find("python")
 # # print(res1,res2)
+
