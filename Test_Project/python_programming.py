@@ -1083,6 +1083,11 @@
 
 
 # # 函数作用域：在Python中，只有模块（module），类（class）以及函数（def、lambda）才会引入新的作用域，其它的代码块（如if、try、for等）是不会引入新的作用域的
+
+# i=3
+# lists=[i for i in range(i,i+3)]
+# print(i)
+
 # for i in range(3):
 #     print(i)
 # print(i) # for循环改变不了作用域属性
@@ -1267,7 +1272,7 @@
 # print(text1.split(maxsplit=-1))
 # print(text1.split("."))
 # print(text1.split(".",1)) # 第二个参数表示最大分割次数，这里1表示分割一次
-# print(text1.rsplit(".",1)) # 从右边第一个，号开始分割1次
+# print(text1.rsplit(".",1)) # 从右边第一个字符起，最大分割1次
 # # 有时，字符串中可能包含连续的分隔符。默认情况下，split()函数会将连续的分隔符视为一个分隔符并忽略中间的空字符串
 # text2="apple,,banana,,grape,,orange"
 # print(text2.split(","))
@@ -1289,13 +1294,15 @@
 #     a=arr[2]
 #     h=arr[3]
 #     list1.append((n,a,h))
+# print(list1)
 # # list.sort(key=None, reverse=False) key和reverse都是可选参数。
 # # key：用于指定一个函数，根据该函数的返回值对列表进行排序。默认值为None，表示使用列表元素自身的值进行排序
 # # reverse：用于控制排序方式，默认值为False，表示升序，设置为True表示降序
-# # list1.sort(key=get_sort) # 按照函数指定的排序
+# # list1.sort(key=get_sort) # 按照函数指定的排序，这里指按照元组的第二项从小到大进行排序
 # list1.sort(key=lambda age:age[1]) # 和上面的利用函数排序一样，可写成lambda表达式
 # for i in list1:
 #     print(i)
+# file.close()
 
 # # 有序数据结构：指元素按照一定的顺序排列，并且可以通过索引或键的顺序来访问；列表、元组和字符串是有序的
 # # 无序数字结构：指元素之间没有特定的顺序，不能通过索引或按照某个明确的顺序来访问；字典和集合是无序的；pop删除的都是第一个元素，并且pop()不能带参数
@@ -1317,4 +1324,19 @@
 # # res1=str1.find("Python") # find函数会在str1字符串中查找”python“字符串，找到则返回其起始索引值，找不到则返回-1
 # # res2=str1.find("python")
 # # print(res1,res2)
+
+# import os
+# file2=open("lx.txt","w",encoding="utf-8")
+# for i in range(10):
+#     if i%5==4:
+#         print(i,file=file2)
+#     else:
+#         print(i,end=" ",file=file2)
+# file2.close()
+# # 获取lx.txt文件大小方法1
+# size1=os.stat(os.getcwd()+'\\lx.txt') # 返回一个stat_result对象，它有一个st_size，包含文件大小（以字节为单位）的属性
+# print(size1,size1.st_size)
+# # 获取lx.txt文件大小方法2
+# size=os.path.getsize(os.getcwd()+'\\lx.txt') # 获取文件的大小，以字节为单位
+# print(size)
 
