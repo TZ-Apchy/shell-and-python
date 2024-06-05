@@ -1067,8 +1067,21 @@
 #             print("You can't roll back an odometer!")  # 加了一个if判断，禁止回调里程数据
 #     def increment_odometer(self, miles):
 #         self.odometer_reading += miles
-#
-#
+# class Battery():
+#     def __init__(self,battery_size=75):
+#         self.battery_size=battery_size
+#     def get_range(self):
+#         if self.battery_size == 75:
+#             range=260
+#         elif self.battery_size == 100:
+#             range=315
+#         print(f"This car can go about {range} miles on a full charge.")
+#     def describe_battery(self):
+#         print(f"This car has a {self.battery_size}-kWh battery.")
+# class ElectricCar(Car):
+#    def __init__(self,make,model,year):
+#        super().__init__(make,model,year)
+#        self.battery=Battery()
 # my_new_car = Car("audi", "a4", 2019)
 # print(my_new_car.get_descriptive_name())
 # my_new_car.read_odometer()
@@ -1080,6 +1093,10 @@
 # my_new_car.read_odometer()
 # my_new_car.increment_odometer(200)  # 通过increment_odometer方法对属性的值再次进行递增，这里在原来基础上增加了200
 # my_new_car.read_odometer()
+# my_tesla=ElectricCar("tesla","model s",2020)
+# print(my_tesla.get_descriptive_name())
+# my_tesla.battery.describe_battery()
+# my_tesla.battery.get_range()
 
 
 # # 函数作用域：在Python中，只有模块（module），类（class）以及函数（def、lambda）才会引入新的作用域，其它的代码块（如if、try、for等）是不会引入新的作用域的

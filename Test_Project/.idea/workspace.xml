@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_programming.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="1340" column="13" lean-forward="true" selection-start-line="1340" selection-start-column="13" selection-end-line="1340" selection-end-column="13" />
+            <state relative-caret-position="-5639">
+              <caret line="1054" column="24" lean-forward="true" selection-start-line="1054" selection-start-column="24" selection-end-line="1054" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -30,24 +30,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lx.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="26">
+              <caret line="1" column="7" selection-end-line="2" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/os_module.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lianxi.csv">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -81,6 +67,7 @@
       <find>open</find>
       <find>strip</find>
       <find>split</find>
+      <find>update</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -95,6 +82,7 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/os_module.py" />
         <option value="$APPLICATION_HOME_DIR$/helpers/third_party/thriftpy/_shaded_thriftpy/_compat.py" />
+        <option value="$PROJECT_DIR$/lx.txt" />
         <option value="$PROJECT_DIR$/python_programming.py" />
       </list>
     </option>
@@ -290,16 +278,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lianxi.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lx.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/Python/Lib/genericpath.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
@@ -307,17 +285,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lianxi.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/os_module.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
+        <state relative-caret-position="289">
           <caret line="54" column="41" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/软件测试课笔记/Python笔记/Python(二下)/demo9.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-647" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lx.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="7" selection-end-line="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/python_programming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="1340" column="13" lean-forward="true" selection-start-line="1340" selection-start-column="13" selection-end-line="1340" selection-end-column="13" />
+        <state relative-caret-position="-5639">
+          <caret line="1054" column="24" lean-forward="true" selection-start-line="1054" selection-start-column="24" selection-end-line="1054" selection-end-column="24" />
         </state>
       </provider>
     </entry>
