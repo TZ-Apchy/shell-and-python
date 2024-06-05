@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/python_programming.py" line="767" />
+    <bookmark url="file://$PROJECT_DIR$/python_programming.py" line="773" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88e01aa6-d7c5-411d-b4e0-7ccc459cf3de" name="Default Changelist" comment="">
@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_programming.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5639">
-              <caret line="1054" column="24" lean-forward="true" selection-start-line="1054" selection-start-column="24" selection-end-line="1054" selection-end-column="24" />
+            <state relative-caret-position="133">
+              <caret line="196" column="8" lean-forward="true" selection-start-line="196" selection-start-column="8" selection-end-line="196" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -59,7 +59,6 @@
       <find>有序</find>
       <find>deci</find>
       <find>round</find>
-      <find>可变</find>
       <find>s</find>
       <find>%</find>
       <find>setdefau</find>
@@ -68,6 +67,7 @@
       <find>strip</find>
       <find>split</find>
       <find>update</find>
+      <find>可变</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -255,6 +255,15 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointLogExpression">
+      <expression>
+        <expression-string>class Car():</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test.py" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/third_party/thriftpy/_shaded_thriftpy/parser/parser.py">
@@ -309,8 +318,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python_programming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5639">
-          <caret line="1054" column="24" lean-forward="true" selection-start-line="1054" selection-start-column="24" selection-end-line="1054" selection-end-column="24" />
+        <state relative-caret-position="133">
+          <caret line="196" column="8" lean-forward="true" selection-start-line="196" selection-start-column="8" selection-end-line="196" selection-end-column="8" />
         </state>
       </provider>
     </entry>
