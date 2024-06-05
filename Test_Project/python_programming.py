@@ -1363,3 +1363,4 @@
 # size=os.path.getsize(os.getcwd()+'\\lx.txt') # 获取文件的大小，以字节为单位
 # print(size)
 
+1
