@@ -1363,3 +1363,14 @@
 # size=os.path.getsize(os.getcwd()+'\\lx.txt') # 获取文件的大小，以字节为单位
 # print(size)
 
+# # all()和any(): 用于测试可迭代对象（如列表、元组、集合等）中的元素是否满足某个条件，最后返回一个布尔值；
+# # all()表示在可迭代对象中的所有元素都满足指定条件才返回True；any()表示在可迭代对象中的任何一个元素满足指定条件就返回True
+# number1=[0,1,-2]
+# number2=[1,2,0]
+# number3=() # 空元组或空列表，all()返回True，any()返回False
+# print(any(number > 0 for number in number1))
+# print(all(number > 0 for number in number2))
+# print(all(number3),any(number3))
+# a=[1,True,object()] # object()用于创建空对象
+# b=[0,False,object()]
+# print(all(a),any(b))
