@@ -1374,3 +1374,4 @@
 # a=[1,True,object()] # object()用于创建空对象
 # b=[0,False,object()]
 # print(all(a),any(b))
+
