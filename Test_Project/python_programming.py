@@ -198,6 +198,14 @@
 # e=c
 # print(id(c),id(d),id(e))
 # print(c is d,c is e,d is e)
+# g="hello" # 不可变数据类型
+# h=g
+# g="world"
+# print(g,id(g),h,id(h))
+# i=[1,2,3] # 可变数据类型
+# j=i
+# i[0]=10
+# print(i,id(i),j,id(j))
 
 # 第一个"%"后面的内容为显示的格式说明，6为显示宽度，3为小数点位数，f为浮点数类型
 # 第二个"%"后面为显示的内容来源，输出结果右对齐，2.300长度为5，故前面有一空格
@@ -750,8 +758,16 @@
 #     print(i)
 #     i = 2
 
-# # decimal可以解决python中浮点数运算的精度问题
+# # decimal可以解决python中浮点数运算的精度问题；由于浮点数据本身不准确，则可以传递给Decimal整型或者字符串参数
 # from decimal import Decimal
+# from fractions import Fraction
+# a=Decimal(10)/Decimal(3) # 整数返回正常的结果，精度比较高
+# b=Fraction(10,3) # 返回的仍是分数形式，第一个参数表示分子，第二个参数表示分母
+# c=10/3 # 返回的是浮点数，在计算机中已二进制方式存储，精度不高
+# print(a,b,c)
+# print(a==b,a==c,b==c)
+# print(Fraction(16, -10)) # 会简化分数结果
+
 # print(0.1 + 0.2)
 # print(Decimal("0.1") + Decimal("0.2"))
 # print(8.7 / 10)
@@ -810,6 +826,9 @@
 # c = [1, 2, 3, 4]
 # d = [3, 6]
 # print(c + d)  # 列表能相加，不能相减
+# def merge_arrays(arrayA,arrayB):
+#     return sorted(set(arrayA+arrayB)) # 列表相加，转换成集合去重，最后排序
+# print(merge_arrays(c,d))
 # e = {1, 2, 3, 4}
 # f = {3, 6}
 # print(e|f,e&f,e^f,e-f)  # 集合能相减，不能相加；e|f表示并集，e&f表示交集，e^f表示只在一个集合中出现的元素
