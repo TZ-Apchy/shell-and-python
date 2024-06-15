@@ -1309,6 +1309,13 @@
 # list2=lambda x:[z for y in x for z in y]
 # print(list2(list1))
 
+# # filter(function, iterable),function是一个用于判断的函数，iterable是一个可迭代对象，可以是列表、元组、集合或字符串等
+# # filter()会将iterable中的每个元素依次传给function进行判断，返回满足条件的元素组成的迭代器
+# list3=[1,2,3,4,5,6]
+# new_list1=filter(lambda x:False if x>3 else True,list3) # 和new_list2等价，filter筛选结果为True的，False则会被舍去
+# new_list2=filter(lambda x:x<=3,list3)
+# print(list(new_list1),list(new_list2))
+
 # text1 = "Hello.World.Python Java\tC\nGo"
 # print(text1.split())# 默认从左往右分割字符串，maxsplit默认-1，即按全部分隔符分割，和text1.split(maxsplit=-1)等价
 # print(text1.split(maxsplit=-1))

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/python_programming.py" line="788" />
+    <bookmark url="file://$PROJECT_DIR$/python_programming.py" line="789" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88e01aa6-d7c5-411d-b4e0-7ccc459cf3de" name="Default Changelist" comment="">
@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_programming.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="762" column="23" lean-forward="true" selection-start-line="762" selection-start-column="22" selection-end-line="762" selection-end-column="30" />
+            <state relative-caret-position="280">
+              <caret line="1312" column="16" selection-start-line="1312" selection-start-column="10" selection-end-line="1312" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -45,7 +45,6 @@
       <find>toppings</find>
       <find>Dog</find>
       <find>spli</find>
-      <find>lamb</find>
       <find>pop</find>
       <find>有序</find>
       <find>round</find>
@@ -60,6 +59,7 @@
       <find>car</find>
       <find>加</find>
       <find>deci</find>
+      <find>lamb</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -391,8 +391,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python_programming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="762" column="23" lean-forward="true" selection-start-line="762" selection-start-column="22" selection-end-line="762" selection-end-column="30" />
+        <state relative-caret-position="280">
+          <caret line="1312" column="16" selection-start-line="1312" selection-start-column="10" selection-end-line="1312" selection-end-column="16" />
         </state>
       </provider>
     </entry>
