@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/python_programming.py" line="794" />
+    <bookmark url="file://$PROJECT_DIR$/python_programming.py" line="799" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88e01aa6-d7c5-411d-b4e0-7ccc459cf3de" name="Default Changelist" comment="">
@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_programming.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="1414" lean-forward="true" selection-start-line="1414" selection-end-line="1414" />
+            <state relative-caret-position="520">
+              <caret line="1454" lean-forward="true" selection-start-line="1454" selection-end-line="1454" />
             </state>
           </provider>
         </entry>
@@ -38,7 +38,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>＇</find>
       <find>return</find>
       <find>is</find>
       <find>sort</find>
@@ -52,7 +51,6 @@
       <find>%</find>
       <find>setdefau</find>
       <find>open</find>
-      <find>strip</find>
       <find>split</find>
       <find>update</find>
       <find>car</find>
@@ -63,6 +61,13 @@
       <find>nonlocal</find>
       <find>可变</find>
       <find>filt</find>
+      <find>ascii</find>
+      <find>map</find>
+      <find>strip</find>
+      <find>内置</find>
+      <find>方法</find>
+      <find>关键字</find>
+      <find>replace</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -394,8 +399,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python_programming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="1414" lean-forward="true" selection-start-line="1414" selection-end-line="1414" />
+        <state relative-caret-position="520">
+          <caret line="1454" lean-forward="true" selection-start-line="1454" selection-end-line="1454" />
         </state>
       </provider>
     </entry>

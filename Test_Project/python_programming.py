@@ -1,3 +1,11 @@
+# # python中的内置函数
+# import builtins
+# print(dir(builtins))
+
+# # python常用关键字
+# import keyword
+# print(keyword.kwlist)
+
 # import copy
 # a = [1, 2, 3, 4, 5, [0], {'name': 3},(1,2,3)]
 # cy1 = a.copy()
@@ -165,9 +173,6 @@
 # for m in range(4,0):
 #     print(m)
 
-# python常用关键字
-# import keyword
-# print(keyword.kwlist)
 
 # 不可变数据类型：当该数据类型的对应变量的值发生了改变，那么它对应的内存地址也会发生改变，对于这种数据类型，就称不可变数据类型
 # 可变数据类型：当该数据类型的对应变量的值发生了改变，那么它对应的内存地址不发生改变，对于这种数据类型，就称可变数据类型
@@ -1281,7 +1286,8 @@
 # fun(1,"m","n")
 
 # a=["1230","ABC","123","abc"] # 字符串比较大小可以用ord()查看他们的ASCII值，按字母一一比较
-# print(ord("1"),ord("A"),ord("a"),ord("0")) # 即abc>ABC>1230>123
+# print(ord("1"),ord("A"),ord("a"),ord("0")) # 内置函数ord()将字符转化为对应的ASCII值，这里是按位比较ASCII值大小，即abc>ABC>1230>123
+# print(chr(65)) # chr函数将ASCII码转换为对应的字符，如：ASCII码值等于65的字符是A
 # a.sort(reverse=True) # 默认从小到大排列，reverse要求逆序排列，即从大到小排列---依据它们的ASCII值
 # print(a)
 
@@ -1325,6 +1331,21 @@
 # list4=["a", "", "b", "c", " ", "", 0]
 # new_list4=filter(None, list4) # 第一个参数设置为None，filter函数会将空字符串和0过滤掉
 # print(list(new_list4))
+# # reduce()函数对可迭代对象中的元素进行累计计算，python3中reduce()被移到了functools模块里，使用时需要导入模块，python2则不用
+# from functools import reduce
+# number1=[1,2,3,4,5]
+# new_number1=reduce(lambda x,y:x+y,number1)
+# print(new_number1) # 1+2+3+4+5
+
+# # abs()函数返回数值的绝对值
+# number1=-42.1
+# print(abs(number1))
+
+# # replace()函数是python字符串对象的内置方法之一，用于将字符串中的指定子串替换为新的子串，不会修改原来的字符串
+# # str.replace(old, new[, count])，count参数可选，表示替换次数(若不指定，则会替换所有匹配的子串)
+# my_str1 = "Hello, hello, hello!"
+# new_str1 = my_str1.replace("hello", "hi", 2) # 替换hello为hi，替换了两次
+# print(my_str1,new_str1,sep="\n")
 
 
 # text1 = "Hello.World.Python Java\tC\nGo"
@@ -1411,4 +1432,23 @@
 # a=[1,True,object()] # object()用于创建空对象
 # b=[0,False,object()]
 # print(all(a),any(b))
+
+# # 将多个可迭代对象(列表、元组、字典、集合、字符串等)按对应位置组合成元组，在python3中zip()的结果为一个对象，而python2中zip()的结果为一个列表
+# # zip()压缩多个数据类型的时候，分别取各个类型的第一个元素各自组成新的元组，元素个数不一致的时候，以最短的为准
+# # zip()会将其迭代器中的多个序列压缩成zip对象或列表
+# list1 = [1,2,3,4]
+# list2 = [4,5,6]
+# tuple3=(4,5,6)
+# char1 = "Tom"
+# char2 = "Jerry"
+# dic1= {1:2,3:4,5:6}
+# print([x for x in zip(list1,list2)]) # 列表和列表合并，以短的为准，这里短的是列表list2
+# print([x for x in zip(list1,tuple3)]) # 列表和元组合并，以短的为准，这里短的是元组tuple3
+# print([x for x in zip(dic1)]) # 字典压缩
+# print([x for x in zip(char1,char2)]) # 字符串和字符串合并，以短的为准，这里短的是字符串char1
+# list3,list4=zip(*zip(list1,list2))
+# print(*zip(list1,list2)) # *args可以接受可变数量的参数，这些参数被封装为一个元组
+# print(list3,list4,sep="\n")
+# for i in [*zip(list1,list2)]:
+#     print(i)
 
