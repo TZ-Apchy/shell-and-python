@@ -1321,6 +1321,10 @@
 # new_list2=filter(lambda x:x<=3,list3)
 # new_list3=map(lambda x:x**2,list3)
 # print(list(new_list1),list(new_list2),list(new_list3))
+# # 直接使用filter()函数来过滤掉可迭代对象中的一些"假值"，例如空字符串、零等，此时可以将filter()函数的参数设置为None，filter()函数会自动过滤掉那些判断为假的元素
+# list4=["a", "", "b", "c", " ", "", 0]
+# new_list4=filter(None, list4) # 第一个参数设置为None，filter函数会将空字符串和0过滤掉
+# print(list(new_list4))
 
 
 # text1 = "Hello.World.Python Java\tC\nGo"
