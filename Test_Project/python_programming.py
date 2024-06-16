@@ -1,5 +1,5 @@
 # import copy
-# a = [1, 2, 3, 4, 5, [0], {'name': 3}]
+# a = [1, 2, 3, 4, 5, [0], {'name': 3},(1,2,3)]
 # cy1 = a.copy()
 # cy2 = copy.copy(a)
 # cy3 = copy.deepcopy(a)
@@ -11,6 +11,11 @@
 # print(cy1, id(cy1), id(cy1[5]), id(a[5]))
 # print(cy2, id(cy2), id(cy2[5]), id(a[5]))
 # print(cy3, id(cy3), id(cy3[5]), id(a[5]))
+
+# a1="hello" # 不可变数据类型
+# b1=a1
+# b1="python" # 使得b1重新指向新的内存地址
+# print(a1,id(a1),b1,id(b1))
 
 # a = 10
 # b = "hello"
