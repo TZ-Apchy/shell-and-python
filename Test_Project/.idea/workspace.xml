@@ -4,9 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/python_programming.py" line="794" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e01aa6-d7c5-411d-b4e0-7ccc459cf3de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/python_programming.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_programming.py" afterDir="false" />
-    </list>
+    <list default="true" id="88e01aa6-d7c5-411d-b4e0-7ccc459cf3de" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_programming.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="17" selection-start-line="14" selection-end-line="17" />
+            <state relative-caret-position="182">
+              <caret line="1407" lean-forward="true" selection-start-line="1407" selection-end-line="1407" />
             </state>
           </provider>
         </entry>
@@ -55,13 +53,13 @@
       <find>strip</find>
       <find>split</find>
       <find>update</find>
-      <find>可变</find>
       <find>car</find>
       <find>加</find>
       <find>deci</find>
       <find>lamb</find>
       <find>filter</find>
       <find>nonlocal</find>
+      <find>可变</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -393,8 +391,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python_programming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="17" selection-start-line="14" selection-end-line="17" />
+        <state relative-caret-position="182">
+          <caret line="1407" lean-forward="true" selection-start-line="1407" selection-end-line="1407" />
         </state>
       </provider>
     </entry>
