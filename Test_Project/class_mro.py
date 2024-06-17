@@ -1,0 +1,71 @@
+# # mro()：Method Resolution Order----方法解析顺序
+# # 获取一个类的mro，如M类：print(M.__mro__)或print(M.mro())
+
+# # 例1：
+# class A:
+#     def say(self):
+#         print("A")
+# class M(A):
+#     pass
+#
+# m=M()
+# m.say()
+
+# # 例2：mro顺序为M-->B-->A
+# class A:
+#     def say(self):
+#         print("A")
+# class B(A):
+#     def say(self):
+#         print("B")
+# class M(B):
+#     pass
+#
+# m=M()
+# m.say()
+
+# # 例3：mro顺序为M-->A-->B
+# class A:
+#     def say(self):
+#         print("A")
+# class B:
+#     def say(self):
+#         print("B")
+# class M(A,B):
+#     pass
+#
+# m=M()
+# m.say()
+
+# # 例4：mro顺序为M-->C-->A-->B
+# class A:
+#     def say(self):
+#         print("A")
+# class B:
+#     def say(self):
+#         print("B")
+# class C(A):
+#     pass
+# class M(C,B):
+#     pass
+#
+# m=M()
+# m.say()
+
+# # 例5：mro顺序为M-->C-->B-->A
+# class A:
+#     def say(self):
+#         print("A")
+# class B(A):
+#     def say(self):
+#         print("B")
+# class C(A):
+#     pass
+# class M(C,B):
+#     pass
+#
+# m=M()
+# # print(M.__mro__) # 获取M类的mro，和下面等价
+# print(M.mro())
+# m.say()
+

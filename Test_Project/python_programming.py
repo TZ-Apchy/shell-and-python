@@ -1337,9 +1337,15 @@
 # new_number1=reduce(lambda x,y:x+y,number1)
 # print(new_number1) # 1+2+3+4+5
 
-# # abs()函数返回数值的绝对值
+# # abs()函数返回数值的绝对值，复数则返回它的模
 # number1=-42.1
 # print(abs(number1))
+# number2=5+2j
+# number3=complex(5,2) # 可以使用complex()函数创建复数，第一个参数位置表示实部，第二个参数位置表示虚部
+# print(number2.real,number2.imag) # 可以通过number2.real属性来访问复数number2的实部，通过number2.imag属性来访问复数number2的虚部
+# print(number2,number3)
+# print(abs(number2)) # 模为5*5+2*2，再开根号
+
 
 # # replace()函数是python字符串对象的内置方法之一，用于将字符串中的指定子串替换为新的子串，不会修改原来的字符串
 # # str.replace(old, new[, count])，count参数可选，表示替换次数(若不指定，则会替换所有匹配的子串)
