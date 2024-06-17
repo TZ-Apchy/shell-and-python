@@ -1,5 +1,5 @@
 # # mro()：Method Resolution Order----方法解析顺序
-# # 获取一个类的mro，如M类：print(M.__mro__)或print(M.mro())
+# # 获取一个类的mro，如M类：M.__mro__或M.mro()
 
 # # 例1：
 # class A:
