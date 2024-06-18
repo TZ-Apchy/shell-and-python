@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/python_programming.py" line="799" />
+    <bookmark url="file://$PROJECT_DIR$/python_programming.py" line="808" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88e01aa6-d7c5-411d-b4e0-7ccc459cf3de" name="Default Changelist" comment="">
@@ -22,7 +22,7 @@
         <entry file="file://$PROJECT_DIR$/python_programming.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="182">
-              <caret line="1339" column="16" lean-forward="true" selection-start-line="1339" selection-start-column="16" selection-end-line="1339" selection-end-column="16" />
+              <caret line="28" selection-start-line="22" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -291,13 +291,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4957627" visible="true" weight="0.12888302" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4957627" visible="true" weight="0.12888302" />
       <window_info id="Structure" order="1" sideWeight="0.5042373" side_tool="true" weight="0.12227363" />
       <window_info id="Favorites" order="2" sideWeight="0.5042373" side_tool="true" weight="0.12227363" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.38746437" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38746437" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3988604" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -407,7 +408,7 @@
     <entry file="file://$PROJECT_DIR$/python_programming.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
-          <caret line="1339" column="16" lean-forward="true" selection-start-line="1339" selection-start-column="16" selection-end-line="1339" selection-end-column="16" />
+          <caret line="28" selection-start-line="22" selection-end-line="28" />
         </state>
       </provider>
     </entry>

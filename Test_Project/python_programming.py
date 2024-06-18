@@ -21,9 +21,16 @@
 # print(cy3, id(cy3), id(cy3[5]), id(a[5]))
 
 # a1="hello" # 不可变数据类型
-# b1=a1
-# b1="python" # 使得b1重新指向新的内存地址
-# print(a1,id(a1),b1,id(b1))
+# b1="hello"
+# c1=a1
+# print(a1,id(a1),b1,id(b1),c1,id(c1))
+# c1="world" # 使得c1重新指向新的内存地址
+# print(a1,id(a1),b1,id(b1),c1,id(c1))
+# d1=[1,2,3] # 可变数据类型
+# e1=[1,2,3]
+# f1=d1
+# print(d1,id(d1),e1,id(e1),f1,id(f1)) # d1和f1指向同一块内存地址
+
 
 # a = 10
 # b = "hello"
