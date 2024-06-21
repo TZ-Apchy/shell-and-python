@@ -4,7 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/python_programming.py" line="806" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88e01aa6-d7c5-411d-b4e0-7ccc459cf3de" name="Default Changelist" comment="" />
+    <list default="true" id="88e01aa6-d7c5-411d-b4e0-7ccc459cf3de" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/python_programming.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_programming.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_programming.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+            <state relative-caret-position="-565">
+              <caret line="1148" lean-forward="true" selection-start-line="1148" selection-end-line="1148" />
             </state>
           </provider>
         </entry>
@@ -36,7 +38,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>return</find>
       <find>is</find>
       <find>sort</find>
       <find>toppings</find>
@@ -66,6 +67,7 @@
       <find>方法</find>
       <find>关键字</find>
       <find>replace</find>
+      <find>作用域</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -405,8 +407,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python_programming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="17" column="10" lean-forward="true" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        <state relative-caret-position="-565">
+          <caret line="1148" lean-forward="true" selection-start-line="1148" selection-end-line="1148" />
         </state>
       </provider>
     </entry>

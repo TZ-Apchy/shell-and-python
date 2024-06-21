@@ -1147,6 +1147,12 @@
 # lists=[i for i in range(i,i+3)]
 # print(i)
 
+# lists=[lambda x:x+y for y in range(3)] # for循环中y的取值为0，1，2，但在lambda表达式中y的取值为2
+# a=lists[0](2)
+# b=lists[1](2)
+# c=lists[2](2)
+# print(a,b,c)
+
 # for i in range(3):
 #     print(i)
 # print(i) # for循环改变不了作用域属性
