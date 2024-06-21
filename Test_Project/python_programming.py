@@ -1147,7 +1147,7 @@
 # lists=[i for i in range(i,i+3)]
 # print(i)
 
-# lists=[lambda x:x+y for y in range(3)] # for循环中y的取值为0，1，2，但在lambda表达式中y的取值为2
+# lists=[lambda x:x+y for y in range(3)] # y是lambda函数的外部变量，只有在调用的时候才会取其值，即在for循环中y的取值为0，1，2，但在lambda表达式中y的取值为2
 # a=lists[0](2)
 # b=lists[1](2)
 # c=lists[2](2)
