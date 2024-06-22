@@ -249,6 +249,45 @@
 # print(b == a)
 # print(c is a, id(a), id(c))
 
+
+# # \r：将光标回退到开始位置
+# # 命令行实现倒计时功能
+# import time
+# for i in range(10):
+#     print("\r离程序退出还剩%s秒" % (9-i), end="...")
+#     time.sleep(1)
+
+# # 命令行实现转圈功能
+# import time
+# lst = ["\\", "|", "/", "—"]
+# for i in range(20):
+#     j = i % 4
+#     print("\r" + lst[j], end="")
+#     time.sleep(1)
+
+# # 实现进度条功能
+# import time
+# for i in range(1,10):
+#     print("\r" + "■"*i, sep="", end="")
+#     time.sleep(1)
+# print("\n下载完成")
+
+# # 实现删除效果功能
+# import time
+# s = "落花有意随流水，流水无心恋落花"
+# l = len(s)
+# for i in range(l):
+#     print("\r" + s[:l-i] + "_", end="")
+#     time.sleep(1)
+
+# test2="a\nb\rc" # \r会使光标回到起始位置，导致第二行的输出b没了变成了c
+# print(test2)
+
+
+# test1=" a\nb\nc\n\r\t "
+# print(test1.strip()) # strip移除开头和结尾的字符
+
+
 # name = "aDa lovelace"
 # print(name.title())  # 每个单词首字母大写
 # print(name.upper())  # 每个字母都大写
@@ -1367,7 +1406,7 @@
 # print(my_str1,new_str1,sep="\n")
 
 
-# text1 = "Hello.World.Python Java\tC\nGo"
+# text1 = " Hello.World.Python Java\tC\nGo\r"
 # print(text1.split())# 默认从左往右分割字符串，maxsplit默认-1，即按全部分隔符分割，和text1.split(maxsplit=-1)等价
 # print(text1.split(maxsplit=-1))
 # print(text1.split("."))
@@ -1379,7 +1418,6 @@
 # # splitlines()主要用于根据换行符\r（回车）、\r\n（回车并换行）、\n（换行）进行分割
 # text3='path\ra\r\nb\ncd'
 # print(text3.splitlines())
-
 
 # def get_sort(age):
 #     return age[1]

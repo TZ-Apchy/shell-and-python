@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/python_programming.py" line="806" />
+    <bookmark url="file://$PROJECT_DIR$/python_programming.py" line="844" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88e01aa6-d7c5-411d-b4e0-7ccc459cf3de" name="Default Changelist" comment="">
@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_programming.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-565">
-              <caret line="1148" lean-forward="true" selection-start-line="1148" selection-end-line="1148" />
+            <state relative-caret-position="241">
+              <caret line="280" lean-forward="true" selection-start-line="280" selection-end-line="280" />
             </state>
           </provider>
         </entry>
@@ -38,7 +38,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>is</find>
       <find>sort</find>
       <find>toppings</find>
       <find>Dog</find>
@@ -50,7 +49,6 @@
       <find>%</find>
       <find>setdefau</find>
       <find>open</find>
-      <find>split</find>
       <find>update</find>
       <find>car</find>
       <find>加</find>
@@ -62,12 +60,14 @@
       <find>filt</find>
       <find>ascii</find>
       <find>map</find>
-      <find>strip</find>
       <find>内置</find>
       <find>方法</find>
       <find>关键字</find>
       <find>replace</find>
       <find>作用域</find>
+      <find>split</find>
+      <find>stri</find>
+      <find>strip</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -298,14 +298,14 @@
       <window_info id="Favorites" order="2" sideWeight="0.5042373" side_tool="true" weight="0.12227363" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38746437" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3988604" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4990086" visible="true" weight="0.38746437" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49966952" weight="0.3988604" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32905984" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49966952" weight="0.32905984" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32905984" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32763532" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5009914" side_tool="true" weight="0.38746437" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.5014245" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -407,8 +407,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python_programming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-565">
-          <caret line="1148" lean-forward="true" selection-start-line="1148" selection-end-line="1148" />
+        <state relative-caret-position="241">
+          <caret line="280" lean-forward="true" selection-start-line="280" selection-end-line="280" />
         </state>
       </provider>
     </entry>
