@@ -285,7 +285,9 @@
 
 
 # test1=" a\nb\nc\n\r\t "
-# print(test1.strip()) # strip移除开头和结尾的字符
+# test1_res=test1.strip() # strip移除开头和结尾的字符
+# print(test1_res) # 可以使用encode()把其转化为字节字符，便于观察
+# print(test1_res.encode())
 
 
 # name = "aDa lovelace"
@@ -342,11 +344,13 @@
 # if b!=a:
 #     print(a,b)
 
-# 二进制、八进制、十六进制转换成二进制
+# # 二进制、八进制、十六进制转换成二进制
 # c = 0b100
 # d = 0o102
 # e = 0xa
-# print(int(c),int(d),int(e),type(int(c)))
+# f = 1e3 # 表示1乘以10的三次方，为浮点数
+# print(c,d,e,f,type(c),type(d),type(e),type(f))
+# # 其他进制转换成十进制
 # print(int('0b100', 2))
 # print(int('0o102', 8))
 # print(int('0xa', 16))
@@ -1508,4 +1512,22 @@
 # print(list3,list4,sep="\n")
 # for i in [*zip(list1,list2)]:
 #     print(i)
+
+# # for...else...: 正常循环结束会执行else语句部分，但通过break强制中断是不会执行else语句
+# # 例1：
+# list1=[1,2,3,4]
+# for i in list1:
+#     if i % 2 == 0:
+#         break
+#     print(i,end=" ")
+# else:
+#     print("ok",end=" ")
+#  # 例2：
+# list2 = [1, 2, 3, 4]
+# for i in list2:
+#     # if i % 2 == 0:
+#     #     break
+#     print(i, end=" ")
+# else:
+#     print("ok", end=" ")
 

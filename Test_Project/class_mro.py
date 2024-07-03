@@ -24,6 +24,19 @@
 # m=M()
 # m.say()
 
+# # mro顺序为F-->E-->D
+# class D:
+#     def __init__(self):
+#         print("D")
+# class E(D):
+#     def __init__(self):
+#         print("E")
+# class F(E):
+#     def __init__(self):
+#         print(F.mro())
+#         super().__init__() # 等价于super(F,self).__init__，会返回F类之后的那个类，即返回的是E类中的结果
+# g=F()
+
 # # 例3：mro顺序为M-->A-->B
 # class A:
 #     def say(self):

@@ -53,3 +53,7 @@ import os
 #         print("文件："+file)
 # path4="D:\study_file\shell-and-python\Test_Project\os_module.py"
 # print(os.path.getsize(path4)) # 只能获取文件的大小，以字节为单位
+
+# from os import path
+# # file_path=path.join("/var/www","/usr","img","1.jpg") # 会取最后一个绝对路径，即只会保留最后一个绝对路径的值
+# # print(file_path)
