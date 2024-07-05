@@ -886,6 +886,11 @@
 # c = [1, 2, 3, 4]
 # d = [3, 6]
 # print(c + d)  # 列表能相加，不能相减
+# a1=[]
+# a2=a1+[0]
+# # extend()函数用于在列表末尾一次性追加另一个序列中的多个值（用新列表扩展原来的列表），该方法没有返回值，但会在已存在的列表中添加新的列表内容
+# a3=a1.extend([1]) #
+# print(a1,a2,a3)
 # def merge_arrays(arrayA,arrayB):
 #     return sorted(set(arrayA+arrayB)) # 列表相加，转换成集合去重，最后排序
 # print(merge_arrays(c,d))

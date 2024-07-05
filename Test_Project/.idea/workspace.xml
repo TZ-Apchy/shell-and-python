@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88e01aa6-d7c5-411d-b4e0-7ccc459cf3de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/python_decorator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/class_mro.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_mro.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/os_module.py" beforeDir="false" afterPath="$PROJECT_DIR$/os_module.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python_programming.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_programming.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,10 +19,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python_programming.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="889" column="9" lean-forward="true" selection-start-line="889" selection-start-column="9" selection-end-line="889" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/python_decorator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="248">
+              <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -42,8 +47,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>toppings</find>
-      <find>Dog</find>
       <find>spli</find>
       <find>pop</find>
       <find>有序</find>
@@ -72,6 +75,8 @@
       <find>stri</find>
       <find>strip</find>
       <find>0b</find>
+      <find>集合</find>
+      <find>append</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -92,8 +97,8 @@
         <option value="$PROJECT_DIR$/import_module_all.py" />
         <option value="$PROJECT_DIR$/os_module.py" />
         <option value="$PROJECT_DIR$/class_mro.py" />
-        <option value="$PROJECT_DIR$/python_programming.py" />
         <option value="$PROJECT_DIR$/python_decorator.py" />
+        <option value="$PROJECT_DIR$/python_programming.py" />
       </list>
     </option>
   </component>
@@ -148,7 +153,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.python_decorator">
+  <component name="RunManager" selected="Python.python_programming">
     <configuration name="class_mro" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Test_Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -256,8 +261,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.python_decorator" />
         <item itemvalue="Python.python_programming" />
+        <item itemvalue="Python.python_decorator" />
         <item itemvalue="Python.class_mro" />
         <item itemvalue="Python.os_module" />
         <item itemvalue="Python.import_module_all" />
@@ -410,17 +415,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python_programming.py">
+    <entry file="file://$PROJECT_DIR$/python_decorator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="1533" lean-forward="true" selection-start-line="1533" selection-end-line="1533" />
+        <state relative-caret-position="248">
+          <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python_decorator.py">
+    <entry file="file://$PROJECT_DIR$/python_programming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="163">
+          <caret line="889" column="9" lean-forward="true" selection-start-line="889" selection-start-column="9" selection-end-line="889" selection-end-column="9" />
         </state>
       </provider>
     </entry>
