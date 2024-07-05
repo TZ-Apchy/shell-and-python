@@ -56,3 +56,51 @@
 #
 # my_func(1)
 # print(other_func(2))
+
+# # 原理讲解：
+# # 需求：在函数执行前输入before，在函数执行后输出after
+# # 方法1：
+# def func():
+#     print("我是func函数")
+#     value=(11,22,33,44)
+#     return value
+#
+# def outer(origin):
+#     def inner():
+#         print("before")
+#         res=origin() # 调用原来的func函数
+#         print("after")
+#         return res
+#     return inner
+#
+# func=outer(func)
+# # result=func()
+# # print(result)
+# print(func())
+
+# 方法2：优化
+# python中支持特殊语法，在某个函数上方使用：@函数名
+"""
+@函数名
+def xxx():
+    pass
+python内部会自动执行：函数名(xxx)，执行完之后，再将结果赋值给xxx
+相当于执行了xxx=函数名(xxx)
+"""
+# def outer(origin):
+#     def inner():
+#         print("before")
+#         res=origin() # 调用原来的func函数
+#         print("after")
+#         return res
+#     return inner
+# @outer # 相当于outer=outer(func)
+# def func():
+#     print("我是func函数")
+#     value=(11,22,33,44)
+#     return value
+#
+# func=outer(func)
+# # result=func()
+# # print(result)
+# print(func())
