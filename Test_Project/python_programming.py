@@ -1536,3 +1536,37 @@
 # else:
 #     print("ok", end=" ")
 
+# # _在python中通常用作临时变量或未使用的变量，它的作用是在调试或临时存储数据时使用，通常不会在代码中保留
+# # _也用于忽略特定值，如果不需要特定值，只需将值指定为下划线即可
+# data1=(1,2,3,4)
+# *_,cs=data1
+# print(_,type(_),cs,type(cs))
+# _,*cs=data1
+# print(_,type(_),cs,type(cs))
+
+# x,_,z=3,4,5
+# print(_)
+
+# data2=(("f1.mp4",(123,9.5),1230),("f2.mp4",(111,4.5),1120),("f3.mkv",(90,2.5),1320),("f4.mp3",1340,("Tom",1998)))
+# *_,audio=data2
+# print(_,audio,sep="\n",end="\n\n")
+# video,*other_videos,audio=data2
+# print(video,other_videos,audio,sep="\n")
+
+# data3=(("f1.mp4",(123,9.5),1230),("f2.mp4",(111,4.5),1120),("f3.mkv",(90,2.5),1320),("f4.mp3",1340,("Tom",1998)))
+# *video,(audio_filename,*_,(author,year))=data3
+# print(video)
+# print(audio_filename,author,year)
+
+# # isinstance()与type()区别：# isinstance()函数来判断一个对象是否是一个已知的类型，类似type()，但也有区别
+# # isinstance()会认为子类是一种父类类型，考虑继承关系
+# # type()不会认为子类是一种父类类型，不考虑继承关系
+# # 如果要判断两个类型是否相同推荐使用 isinstance()
+# class A:
+#     pass
+# class B(A):
+#     pass
+# print(isinstance(A(), A))
+# print(type(A()) == A)
+# print(isinstance(B(), A))
+# print(type(B()) == A)
