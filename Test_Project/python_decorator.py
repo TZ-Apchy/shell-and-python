@@ -144,36 +144,45 @@ python内部会自动执行：函数名(xxx)，执行完之后，再将结果赋
 # print(func3(),end="\n\n")
 
 
-# 例4：函数带参数的情况
-def outer(origin):
-    def inner(*args,**kwargs):
-        print("before")
-        res=origin(*args,**kwargs) # 调用原来的func1、func2、func3函数
-        print("after")
-        return res
-    return inner
-
-@outer # 相当于func1=outer(func1)
-def func1(a1):
-    print("我是func1函数")
-    value=(11,22,33,44)
-    return value
-
-@outer # 相当于func2=outer(func2)
-def func2(a2,b2):
-    print("我是func2函数")
-    value=(11,22,33,44)
-    return value
-
-@outer # 相当于func3=outer(func3)
-def func3(a3,b3,c3):
-    print("我是func3函数")
-    value=(11,22,33,44)
-    return value
-
-# func=outer(func)
-# result=func()
-# print(result)
-print(func1(1),end="\n\n")
-print(func2(2,3),end="\n\n")
-print(func3(4,5,6),end="\n\n")
+# # 例4：函数带参数的情况
+# def outer(origin):
+#     def inner(*args,**kwargs):
+#         '''i am inner'''
+#         print("before")
+#         res=origin(*args,**kwargs) # 调用原来的func1、func2、func3函数
+#         print("after")
+#         return res
+#     return inner
+#
+# @outer # 相当于func1=outer(func1)
+# def func1(a1):
+#     '''i am func1'''
+#     print("我是func1函数")
+#     value=(11,22,33,44)
+#     return value
+#
+# @outer # 相当于func2=outer(func2)
+# def func2(a2,b2):
+#     '''i am func2'''
+#     print("我是func2函数")
+#     value=(11,22,33,44)
+#     return value
+#
+# @outer # 相当于func3=outer(func3)
+# def func3(a3,b3,c3):
+#     '''i am func3'''
+#     print("我是func3函数")
+#     value=(11,22,33,44)
+#     return value
+#
+# # func=outer(func)
+# # result=func()
+# # print(result)
+# print(func1(1),end="\n\n")
+# print(func2(2,3),end="\n\n")
+# print(func3(4,5,6),end="\n\n")
+# # __name__获取当前运行的函数名称，这里由于装饰器的原因，当前运行函数名称变成了inner函数
+# print(func2.__name__)
+# # __doc__获取当前运行函数中的存在的文档字符串描述，文档字符串通常以""""""或''''''表示
+# # 这里由于装饰器的原因，当前显示的是inner函数中存在的文档字符串描述
+# print(func1.__doc__)
