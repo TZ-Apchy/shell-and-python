@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/python_programming.py" line="848" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="88e01aa6-d7c5-411d-b4e0-7ccc459cf3de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/python_decorator.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_decorator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_programming.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_programming.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,7 +15,17 @@
     <favorites_list name="Test_Project" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/python_programming.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="228">
+              <caret line="1417" selection-start-line="1417" selection-end-line="1417" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -28,9 +36,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>s</find>
-      <find>%</find>
-      <find>setdefau</find>
       <find>open</find>
       <find>update</find>
       <find>car</find>
@@ -46,9 +51,7 @@
       <find>内置</find>
       <find>方法</find>
       <find>关键字</find>
-      <find>replace</find>
       <find>作用域</find>
-      <find>split</find>
       <find>stri</find>
       <find>strip</find>
       <find>0b</find>
@@ -58,6 +61,11 @@
       <find>and</find>
       <find>序列</find>
       <find>isinstance</find>
+      <find>字符</find>
+      <find>split</find>
+      <find>\n</find>
+      <find>join</find>
+      <find>replace</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -78,9 +86,9 @@
         <option value="$PROJECT_DIR$/import_module_all.py" />
         <option value="$PROJECT_DIR$/os_module.py" />
         <option value="$PROJECT_DIR$/class_mro.py" />
-        <option value="$PROJECT_DIR$/python_programming.py" />
         <option value="$PROJECT_DIR$/args_kwargs.py" />
         <option value="$PROJECT_DIR$/python_decorator.py" />
+        <option value="$PROJECT_DIR$/python_programming.py" />
       </list>
     </option>
   </component>
@@ -135,7 +143,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.python_decorator">
+  <component name="RunManager" selected="Python.python_programming">
     <configuration name="args_kwargs" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Test_Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -243,9 +251,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.python_programming" />
         <item itemvalue="Python.python_decorator" />
         <item itemvalue="Python.args_kwargs" />
-        <item itemvalue="Python.python_programming" />
         <item itemvalue="Python.class_mro" />
         <item itemvalue="Python.os_module" />
       </list>
@@ -283,8 +291,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4957627" visible="true" weight="0.12888302" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4957627" visible="true" weight="0.18968935" />
       <window_info id="Structure" order="1" sideWeight="0.5042373" side_tool="true" weight="0.12227363" />
       <window_info id="Favorites" order="2" sideWeight="0.5042373" side_tool="true" weight="0.12227363" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -403,13 +412,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python_programming.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="1572" selection-start-line="1572" selection-end-line="1572" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/args_kwargs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -419,8 +421,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python_decorator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
+        <state relative-caret-position="854">
           <caret line="188" lean-forward="true" selection-start-line="188" selection-end-line="188" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_programming.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="1417" selection-start-line="1417" selection-end-line="1417" />
         </state>
       </provider>
     </entry>

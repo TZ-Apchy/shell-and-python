@@ -286,8 +286,8 @@
 
 # test1=" a\nb\nc\n\r\t "
 # test1_res=test1.strip() # strip移除开头和结尾的字符
-# print(test1_res) # 可以使用encode()把其转化为字节字符，便于观察
-# print(test1_res.encode())
+# print(test1_res)
+# print(test1_res.encode()) # 可以使用encode()把其转化为字节字符，便于观察
 
 
 # name = "aDa lovelace"
@@ -1414,6 +1414,11 @@
 # new_str1 = my_str1.replace("hello", "hi", 2) # 替换hello为hi，替换了两次
 # print(my_str1,new_str1,sep="\n")
 
+# # join()是一个非常有用的字符串方法，用于将一个可迭代的字符串元素(如列表、元组或字符串)连接成一个单独的字符串
+# a1 = "-" # 连接符
+# str1 = ("a", "b", "c") # 需要处理的字符串
+# print(a1.join(str1))
+
 
 # text1 = " Hello.World.Python Java\tC\nGo\r"
 # print(text1.split())# 默认从左往右分割字符串，maxsplit默认-1，即按全部分隔符分割，和text1.split(maxsplit=-1)等价
@@ -1427,6 +1432,14 @@
 # # splitlines()主要用于根据换行符\r（回车）、\r\n（回车并换行）、\n（换行）进行分割
 # text3='path\ra\r\nb\ncd'
 # print(text3.splitlines())
+# text4=""
+# text5=" "
+# sp1_text4=text4.split(" ")
+# sp2_text4=text4.split()
+# sp3_text5=text5.split(" ")
+# sp4_text5=text5.split()
+# print(sp1_text4,sp2_text4,sp3_text5,sp4_text5)
+# print(len(sp1_text4),len(sp2_text4),len(sp3_text5),len(sp4_text5))
 
 # def get_sort(age):
 #     return age[1]
