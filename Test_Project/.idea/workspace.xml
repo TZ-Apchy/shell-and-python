@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88e01aa6-d7c5-411d-b4e0-7ccc459cf3de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/python_programming.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_programming.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +18,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_programming.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="1417" selection-start-line="1417" selection-end-line="1417" />
+            <state relative-caret-position="154">
+              <caret line="231" column="14" lean-forward="true" selection-start-line="231" selection-start-column="14" selection-end-line="231" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -36,7 +35,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>open</find>
       <find>update</find>
       <find>car</find>
       <find>加</find>
@@ -44,7 +42,6 @@
       <find>lamb</find>
       <find>filter</find>
       <find>nonlocal</find>
-      <find>可变</find>
       <find>filt</find>
       <find>ascii</find>
       <find>map</find>
@@ -57,7 +54,6 @@
       <find>0b</find>
       <find>集合</find>
       <find>append</find>
-      <find>相加</find>
       <find>and</find>
       <find>序列</find>
       <find>isinstance</find>
@@ -66,6 +62,9 @@
       <find>\n</find>
       <find>join</find>
       <find>replace</find>
+      <find>列表相加</find>
+      <find>相加</find>
+      <find>可变</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -298,7 +297,7 @@
       <window_info id="Favorites" order="2" sideWeight="0.5042373" side_tool="true" weight="0.12227363" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49834764" visible="true" weight="0.37606838" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49834764" visible="true" weight="0.28917378" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49966952" weight="0.3988604" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -428,8 +427,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python_programming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="1417" selection-start-line="1417" selection-end-line="1417" />
+        <state relative-caret-position="154">
+          <caret line="231" column="14" lean-forward="true" selection-start-line="231" selection-start-column="14" selection-end-line="231" selection-end-column="14" />
         </state>
       </provider>
     </entry>
