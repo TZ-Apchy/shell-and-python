@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88e01aa6-d7c5-411d-b4e0-7ccc459cf3de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/python_programming.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_programming.py" afterDir="false" />
-    </list>
+    <list default="true" id="88e01aa6-d7c5-411d-b4e0-7ccc459cf3de" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_programming.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="231" column="14" lean-forward="true" selection-start-line="231" selection-start-column="14" selection-end-line="231" selection-end-column="14" />
+            <state relative-caret-position="180">
+              <caret line="241" column="5" lean-forward="true" selection-start-line="241" selection-start-column="5" selection-end-line="241" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -427,8 +425,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python_programming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="231" column="14" lean-forward="true" selection-start-line="231" selection-start-column="14" selection-end-line="231" selection-end-column="14" />
+        <state relative-caret-position="180">
+          <caret line="241" column="5" lean-forward="true" selection-start-line="241" selection-start-column="5" selection-end-line="241" selection-end-column="5" />
         </state>
       </provider>
     </entry>
