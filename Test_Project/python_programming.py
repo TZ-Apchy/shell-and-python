@@ -1606,3 +1606,9 @@
 # print(type(A()) == A)
 # print(isinstance(B(), A))
 # print(type(B()) == A)
+
+# a="1.0".isdigit() # 判断非空字符串是否只由数字组成，0和正数返回True，负数及小数返回False
+# b="1.0".isnumeric() # 判断非空字符串是否仅由数字组成，0和正数返回True，负数及小数返回False
+# c="1.0".isalnum() # 判断非空字符串是否由字母和数字组成，汉字也会返回True
+# d="美女".isalnum()
+# print(a,b,c,d)
