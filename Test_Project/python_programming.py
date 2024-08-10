@@ -1620,3 +1620,10 @@
 # c="1.0".isalnum() # 判断非空字符串是否由字母和数字组成，汉字也会返回True
 # d="美女".isalnum()
 # print(a,b,c,d)
+
+# a=[[1,2,3],[4,5,6],[7,8,9]]
+# s=0
+# for c in a:
+#     for j in range(3):
+#         s+=c[j]
+# print(s)
