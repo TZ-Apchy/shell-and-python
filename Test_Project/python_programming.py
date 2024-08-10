@@ -517,6 +517,14 @@
 # print(players[-4:-3:-1])
 # print(players[-6::1])
 
+# lists=list("hello")
+# print(lists)
+# s1=lists[:-1:-2]
+# s2=lists[:-1:2]
+# s3=lists[-1::-2] # 从最后一位截取到首位之前，并不是截取到首位，否则截取不到h
+# print(s1,s2,s3,sep="\n")
+
+
 # 复制列表使用切片[:]和不使用切片的区别：
 # a = [1, 2, 3]
 # b = a[:]
