@@ -1632,3 +1632,7 @@
 # for i in range(5,0,-1):
 #     lists.insert(i,i)
 # print(lists)
+
+# str1='abcd12efg'
+# print(str1.upper().title())
+
