@@ -1636,3 +1636,12 @@
 # str1='abcd12efg'
 # print(str1.upper().title())
 
+# from decimal import Decimal
+# a=0.1
+# b=0.2
+# c=0.3
+# d1=a+b+c
+# d2=float(a+b+c)
+# d3=round(a+b+c,2)
+# d4=Decimal(a)+Decimal(b)+Decimal(c)
+# print(d1,d2,d3,d4)
