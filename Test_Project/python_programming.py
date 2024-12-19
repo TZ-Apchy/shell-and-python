@@ -517,6 +517,14 @@
 # print(players[-4:-3:-1])
 # print(players[-6::1])
 
+# str1="hello"
+# a=str1[:-1:-1]
+# b=str1[:-2:-1]
+# c=str1[:1:-1]
+# d=str1[:1:1]
+# print(a,b,c,d,sep="\n")
+
+
 # lists=list("hello")
 # print(lists)
 # s1=lists[:-1:-2]
