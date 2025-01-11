@@ -1653,3 +1653,9 @@
 # d3=round(a+b+c,2)
 # d4=Decimal(a)+Decimal(b)+Decimal(c)
 # print(d1,d2,d3,d4)
+
+# list1=[1,2,3,4,5]
+# for i in list1:
+#     list1.remove(i)
+#     list1.append(i)
+# print(list1)
