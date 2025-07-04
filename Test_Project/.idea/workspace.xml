@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_programming.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="526" lean-forward="true" selection-start-line="526" selection-end-line="526" />
+            <state relative-caret-position="331">
+              <caret line="169" column="34" lean-forward="true" selection-start-line="169" selection-start-column="34" selection-end-line="169" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -36,9 +36,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>car</find>
-      <find>加</find>
-      <find>deci</find>
       <find>lamb</find>
       <find>filter</find>
       <find>nonlocal</find>
@@ -66,6 +63,9 @@
       <find>相加</find>
       <find>可变</find>
       <find>round</find>
+      <find>lam</find>
+      <find>1f</find>
+      <find>args</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -88,6 +88,7 @@
         <option value="$PROJECT_DIR$/class_mro.py" />
         <option value="$PROJECT_DIR$/args_kwargs.py" />
         <option value="$PROJECT_DIR$/python_decorator.py" />
+        <option value="$PROJECT_DIR$/socket.py" />
         <option value="$PROJECT_DIR$/python_programming.py" />
       </list>
     </option>
@@ -104,7 +105,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,6 +116,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -433,10 +434,11 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/socket.py" />
     <entry file="file://$PROJECT_DIR$/python_programming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="526" lean-forward="true" selection-start-line="526" selection-end-line="526" />
+        <state relative-caret-position="331">
+          <caret line="169" column="34" lean-forward="true" selection-start-line="169" selection-start-column="34" selection-end-line="169" selection-end-column="34" />
         </state>
       </provider>
     </entry>
