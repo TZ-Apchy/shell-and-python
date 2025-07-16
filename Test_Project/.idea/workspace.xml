@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_programming.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="169" column="34" lean-forward="true" selection-start-line="169" selection-start-column="34" selection-end-line="169" selection-end-column="34" />
+            <state relative-caret-position="447">
+              <caret line="1738" column="23" lean-forward="true" selection-start-line="1738" selection-start-column="23" selection-end-line="1738" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -36,7 +36,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>lamb</find>
       <find>filter</find>
       <find>nonlocal</find>
       <find>filt</find>
@@ -47,7 +46,6 @@
       <find>关键字</find>
       <find>作用域</find>
       <find>stri</find>
-      <find>strip</find>
       <find>0b</find>
       <find>集合</find>
       <find>append</find>
@@ -66,6 +64,8 @@
       <find>lam</find>
       <find>1f</find>
       <find>args</find>
+      <find>rstrip</find>
+      <find>strip</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -105,6 +105,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,7 +117,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -306,15 +306,15 @@
       <window_info id="Favorites" order="2" sideWeight="0.5042373" side_tool="true" weight="0.12227363" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49834764" visible="true" weight="0.28917378" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49966952" weight="0.3988604" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4970258" weight="0.28917378" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4990086" weight="0.3988604" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49966952" weight="0.32905984" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32905984" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.4088319" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50165236" side_tool="true" weight="0.5014245" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49834764" weight="0.5014245" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49966952" weight="0.4088319" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5029742" side_tool="true" weight="0.28917378" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.4976867" weight="0.5014245" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -346,13 +346,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-208">
           <caret line="103" column="30" lean-forward="true" selection-start-line="103" selection-start-column="30" selection-end-line="103" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-643338342/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="490" column="33" lean-forward="true" selection-start-line="490" selection-start-column="33" selection-end-line="490" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -420,13 +413,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/args_kwargs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python_decorator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -435,10 +421,24 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/socket.py" />
+    <entry file="file://$PROJECT_DIR$/args_kwargs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-643338342/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="494" column="42" selection-start-line="494" selection-start-column="42" selection-end-line="494" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python_programming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="169" column="34" lean-forward="true" selection-start-line="169" selection-start-column="34" selection-end-line="169" selection-end-column="34" />
+        <state relative-caret-position="447">
+          <caret line="1738" column="23" lean-forward="true" selection-start-line="1738" selection-start-column="23" selection-end-line="1738" selection-end-column="23" />
         </state>
       </provider>
     </entry>

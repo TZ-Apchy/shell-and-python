@@ -318,7 +318,7 @@
 
 
 # test1=" a\nb\nc\n\r\t "
-# test1_res=test1.strip() # strip移除开头和结尾的字符
+# test1_res=test1.strip() # strip移除开头和结尾的字符(空格、换行符\n、制表符\t)
 # print(test1_res)
 # print(test1_res.encode()) # 可以使用encode()把其转化为字节字符，便于观察
 
@@ -1323,6 +1323,22 @@
 # fun()
 # print(s)
 
+# def outer():
+#     x=1
+#     def inner():
+#         nonlocal x
+#         # x=3
+#         x+=1
+#         return x
+#     return inner
+#
+# f=outer()
+# print(f())
+# print(f())
+
+
+
+
 # a=float("NaN")
 # b=float("NaN")
 # print(a is b,a==b,a!=b)
@@ -1672,3 +1688,52 @@
 
 # f = [lambda x=1:x*2,lambda x:x**2]
 # print(f[1](f[0](3)))
+
+# import math
+# from decimal import Decimal, getcontext
+#
+# print("π的值是:", math.pi)
+# # 设置更高的精度
+# getcontext().prec = 50  # 精度设置为50位小数
+# # 打印π的值
+# print("π的值是:", Decimal(math.pi))
+
+# with open('pi_digits.txt') as file_object:
+#     contents=file_object.read()
+# print(contents)
+
+# file_name="pi_digits.txt"
+# with open(file_name) as file_object:
+#     for  line in file_object:
+#         print(line.rstrip()) # 删除字符串末尾的空白行
+
+# a=" \t\naa\nbb\tcc\n\t "
+# print(a.strip(),a.lstrip(),a.rstrip()) # 去除字符串的空白字符，默认为空格、制表符、换行符
+
+# readline()和readlines()都是用于读取文件的函数，它们之间的区别：
+# readline()：‌逐行读取文件内容，每次调用仅加载当前行到内存中，适合处理大文件或内存受限的情况，可有效减少内存占用；
+# readlines()：一次性将文件的所有内容加载到内存中，返回一个包含所有行的列表，若文件较大或内存有限，可能导致程序崩溃；
+
+# # 返回一个字符串列表，每个元素对应文件的一行(包括换行符)；在with代码块外，仍然可使用变量lines
+# with open('pi_digits.txt', 'r') as f:
+#     lines = f.readlines()
+#     print(lines,type(lines))
+# for line in lines:
+#     print(line.rstrip(),type(line))
+
+# # 每次调用仅读取文件的下一行内容，包括行末的换行符，若文件指针到达末尾，则返回空字符串''
+# with open('pi_digits.txt', 'r') as f:
+#     while True:
+#         line = f.readline()
+#         if not line:
+#             break
+#         print(line.strip())  # 去除行末的换行符
+
+# with open('pi_digits.txt',"r") as f:
+#     lines=f.readlines()
+#
+# pi_string=" "
+# for line in lines:
+#     pi_string+=line.rstrip()
+# print(pi_string)
+# print(len(pi_string))
