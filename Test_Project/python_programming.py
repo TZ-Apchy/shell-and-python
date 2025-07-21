@@ -1698,11 +1698,11 @@
 # # 打印π的值
 # print("π的值是:", Decimal(math.pi))
 
-# with open('pi_digits.txt') as file_object:
+# with open('with_open\pi_digits.txt') as file_object:
 #     contents=file_object.read()
 # print(contents)
 
-# file_name="pi_digits.txt"
+# file_name="with_open\pi_digits.txt"
 # with open(file_name) as file_object:
 #     for  line in file_object:
 #         print(line.rstrip()) # 删除字符串末尾的空白行
@@ -1715,21 +1715,21 @@
 # readlines()：一次性将文件的所有内容加载到内存中，返回一个包含所有行的列表，若文件较大或内存有限，可能导致程序崩溃；
 
 # # 返回一个字符串列表，每个元素对应文件的一行(包括换行符)；在with代码块外，仍然可使用变量lines
-# with open('pi_digits.txt', 'r') as f:
+# with open('with_open\pi_digits.txt', 'r') as f: # 等价于with open('pi_digits.txt') as f:  默认为只读模式，可省略
 #     lines = f.readlines()
 #     print(lines,type(lines))
 # for line in lines:
 #     print(line.rstrip(),type(line))
 
 # # 每次调用仅读取文件的下一行内容，包括行末的换行符，若文件指针到达末尾，则返回空字符串''
-# with open('pi_digits.txt', 'r') as f:
+# with open('with_open\pi_digits.txt', 'r') as f:
 #     while True:
 #         line = f.readline()
 #         if not line:
 #             break
 #         print(line.strip())  # 去除行末的换行符
 
-# with open('pi_digits.txt',"r") as f:
+# with open('with_open\pi_digits.txt',"r") as f:
 #     lines=f.readlines()
 #
 # pi_string=" "
@@ -1737,3 +1737,68 @@
 #     pi_string+=line.rstrip()
 # print(pi_string)
 # print(len(pi_string))
+
+
+# # 读取模式（r）：文件必须存在，否则抛出FileNotFoundError；以文本模式读取，返回字符串；'r' 可省略，默认即为读取模式
+# with open('with_open\with_open_r.txt', 'r') as file_project:
+#     content=file_project.read()  # 读取整个文件内容
+#     print(content)
+
+# # 写入模式（w）：文件不存在时会创建，存在则清空原有内容；写入的内容必须是字符串，不是可用str()函数转换
+# filename="with_open\with_open_w.txt"
+# with open(filename,"w") as file_project:
+#     file_project.write("I Love Python\n") # 若要换行，可在末尾加上换行符，即file_project.write("I Love Python\n")
+#     file_project.write("OK") # 这样写入的文件在一行，没有换行符
+
+# # 追加模式（a）：文件不存在时会创建，存在则在末尾追加内容；写入指针始终位于文件末尾
+# filename="with_open\with_open_a.txt"
+# with open(filename, 'a') as file_project:
+#     file_project.write('I Love Python\n')  # 在文件末尾追加内容
+
+# # 读写模式（r+）：文件必须存在；写入时若指针不在文件末尾，可能覆盖原有内容
+# with open('with_open\with_open_r+.txt', 'r+') as f:
+#     file_content = f.read()  # 先读取
+#     print(file_content)
+#     f.write('I Love Python')  # 在文件末尾追加（即使已读取过）
+
+# # 写读模式（w+）：件不存在时创建，存在则清空；写入后需手动使用seek()函数移动指针后才能读取
+# with open('with_open\with_open_w+.txt', 'w+') as f:
+#     f.write('I Love Python')  # 先写入（会清空文件）
+#     f.seek(0)  # 将文件指针移回开头
+#     file_content = f.read()  # 再读取
+#     print(file_content)
+
+# 补充：指针移动函数seek的用法
+# 语法：file_object.seek(offset, whence)
+# 参数1：offset可以是正数、负数或零；
+# 正数表示向文件的末尾（文件尾部）移动；
+# 负数表示向文件的开头（文件头部）移动，需要注意的是，文件的开始位置索引为0
+# 零表示从文件开始位置进行移动
+
+# 参数2：whence是可选参数，用来确定offset的参考位置
+# 0代表从文件开头进行偏移（默认值）
+# 1代表从当前位置进行偏移
+# 2代表从文件末尾进行偏移
+
+# with open("with_open\seek.txt") as f:
+    # f.seek(0) # 从文件开头开始，不偏移
+    # print(f.read())
+    # f.seek(2) # 向文件尾部发生2个偏移量
+    # print(f.read())
+    # f.seek(0,0)  # 将指针移动到文件开头
+    # print(f.read())
+    # f.seek(0,2) # 将指针移动到文件末尾
+    # print(f.read())
+    # position=f.seek(0,1) # 获取当前文件指针的位置
+    # print(position)
+
+# # 追加读写模式（a+）：写入始终在文件末尾，但读取可从头开始
+# with open('with_open\with_open_a+.txt', 'a+') as f:
+#     f.write('I Love Python')  # 在末尾追加
+#     f.seek(0)  # 移动指针到开头
+#     content = f.read()  # 读取整个文件（包括追加的内容）
+#     print(content)
+
+# # 只写模式（x）：文件不存在时创建，存在则抛出 FileExistsError；用于避免意外覆盖已有文件
+# with open('with_open\with_open_x.txt', 'x') as f:
+#     f.write('I Love Python')  # 只创建新文件，若文件已存在则报错

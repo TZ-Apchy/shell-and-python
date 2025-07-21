@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="88e01aa6-d7c5-411d-b4e0-7ccc459cf3de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pi_digits.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/python_programming.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_programming.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_programming.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="1738" column="23" lean-forward="true" selection-start-line="1738" selection-start-column="23" selection-end-line="1738" selection-end-column="23" />
+            <state relative-caret-position="277">
+              <caret line="1804" lean-forward="true" selection-start-line="1804" selection-end-line="1804" />
             </state>
           </provider>
         </entry>
@@ -301,19 +302,19 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4957627" visible="true" weight="0.15730338" />
-      <window_info id="Structure" order="1" sideWeight="0.5042373" side_tool="true" weight="0.12227363" />
-      <window_info id="Favorites" order="2" sideWeight="0.5042373" side_tool="true" weight="0.12227363" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49298596" visible="true" weight="0.15730338" />
+      <window_info id="Structure" order="1" sideWeight="0.50701404" side_tool="true" weight="0.15730338" />
+      <window_info id="Favorites" order="2" sideWeight="0.50701404" side_tool="true" weight="0.15730338" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4970258" weight="0.28917378" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49636483" visible="true" weight="0.28917378" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4990086" weight="0.3988604" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49966952" weight="0.32905984" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32905984" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49966952" weight="0.4088319" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5029742" side_tool="true" weight="0.28917378" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50363517" side_tool="true" weight="0.28917378" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.4976867" weight="0.5014245" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -406,13 +407,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/python_decorator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -435,10 +429,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="1740" selection-start-line="1740" selection-end-line="1740" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/python_programming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="1738" column="23" lean-forward="true" selection-start-line="1738" selection-start-column="23" selection-end-line="1738" selection-end-column="23" />
+        <state relative-caret-position="277">
+          <caret line="1804" lean-forward="true" selection-start-line="1804" selection-end-line="1804" />
         </state>
       </provider>
     </entry>
