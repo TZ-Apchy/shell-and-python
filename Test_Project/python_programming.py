@@ -1698,13 +1698,13 @@
 # # 打印π的值
 # print("π的值是:", Decimal(math.pi))
 
-# with open('with_open\pi_digits.txt') as file_object:
-#     contents=file_object.read()
+# with open('with_open\pi_digits.txt') as f:
+#     contents=f.read()
 # print(contents)
 
 # file_name="with_open\pi_digits.txt"
-# with open(file_name) as file_object:
-#     for  line in file_object:
+# with open(file_name) as f:
+#     for line in f:
 #         print(line.rstrip()) # 删除字符串末尾的空白行
 
 # a=" \t\naa\nbb\tcc\n\t "
@@ -1715,7 +1715,7 @@
 # readlines()：一次性将文件的所有内容加载到内存中，返回一个包含所有行的列表，若文件较大或内存有限，可能导致程序崩溃；
 
 # # 返回一个字符串列表，每个元素对应文件的一行(包括换行符)；在with代码块外，仍然可使用变量lines
-# with open('with_open\pi_digits.txt', 'r') as f: # 等价于with open('pi_digits.txt') as f:  默认为只读模式，可省略
+# with open('with_open\pi_digits.txt', 'r') as f: # 等价于with open('with_open\pi_digits.txt') as f:  默认为只读模式，可省略
 #     lines = f.readlines()
 #     print(lines,type(lines))
 # for line in lines:
@@ -1728,10 +1728,13 @@
 #         if not line:
 #             break
 #         print(line.strip())  # 去除行末的换行符
+# 注：if not语句工作原理基于Python中的布尔运算，默认情况下，if语句会检查它后面的条件是否为True，如果
+# 条件为True，则执行if语句块内的代码；而if not则是if的反向工作模式，它会在后面的条件为False时执行代码块
+
 
 # with open('with_open\pi_digits.txt',"r") as f:
 #     lines=f.readlines()
-#
+# print(lines,type(lines)) # lines为列表
 # pi_string=" "
 # for line in lines:
 #     pi_string+=line.rstrip()
@@ -1742,13 +1745,13 @@
 # # 读取模式（r）：文件必须存在，否则抛出FileNotFoundError；以文本模式读取，返回字符串；'r' 可省略，默认即为读取模式
 # with open('with_open\with_open_r.txt', 'r') as file_project:
 #     content=file_project.read()  # 读取整个文件内容
-#     print(content)
+#     print(content,type(content))
 
 # # 写入模式（w）：文件不存在时会创建，存在则清空原有内容；写入的内容必须是字符串，不是可用str()函数转换
 # filename="with_open\with_open_w.txt"
 # with open(filename,"w") as file_project:
-#     file_project.write("I Love Python\n") # 若要换行，可在末尾加上换行符，即file_project.write("I Love Python\n")
-#     file_project.write("OK") # 这样写入的文件在一行，没有换行符
+#     file_project.write("I Love Python\n") # 若要换行，可在末尾加上换行符
+#     file_project.write("OK") # 多行写入，上面写入的末尾带了换行符，保证了文件输出不在同一行
 
 # # 追加模式（a）：文件不存在时会创建，存在则在末尾追加内容；写入指针始终位于文件末尾
 # filename="with_open\with_open_a.txt"
@@ -1761,7 +1764,7 @@
 #     print(file_content)
 #     f.write('I Love Python')  # 在文件末尾追加（即使已读取过）
 
-# # 写读模式（w+）：件不存在时创建，存在则清空；写入后需手动使用seek()函数移动指针后才能读取
+# # 写读模式（w+）：文件不存在时创建，存在则清空；写入后需手动使用seek()函数移动指针后才能读取
 # with open('with_open\with_open_w+.txt', 'w+') as f:
 #     f.write('I Love Python')  # 先写入（会清空文件）
 #     f.seek(0)  # 将文件指针移回开头
