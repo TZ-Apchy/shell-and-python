@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/python_programming.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="1812" lean-forward="true" selection-start-line="1812" selection-end-line="1812" />
+            <state relative-caret-position="231">
+              <caret line="1503" column="27" lean-forward="true" selection-start-line="1503" selection-start-column="27" selection-end-line="1503" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -53,7 +53,6 @@
       <find>序列</find>
       <find>isinstance</find>
       <find>字符</find>
-      <find>split</find>
       <find>\n</find>
       <find>join</find>
       <find>replace</find>
@@ -66,6 +65,7 @@
       <find>args</find>
       <find>rstrip</find>
       <find>strip</find>
+      <find>split</find>
     </findStrings>
     <replaceStrings>
       <replace>&quot;</replace>
@@ -451,8 +451,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/python_programming.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="1812" lean-forward="true" selection-start-line="1812" selection-end-line="1812" />
+        <state relative-caret-position="231">
+          <caret line="1503" column="27" lean-forward="true" selection-start-line="1503" selection-start-column="27" selection-end-line="1503" selection-end-column="27" />
         </state>
       </provider>
     </entry>

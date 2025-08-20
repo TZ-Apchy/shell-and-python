@@ -1496,7 +1496,6 @@
 # print(text1.split("."))
 # print(text1.split(".",1)) # 第二个参数表示最大分割次数，这里1表示分割一次
 # print(text1.rsplit(".",1)) # 从右边第一个字符起，最大分割1次
-# # 有时，字符串中可能包含连续的分隔符。默认情况下，split()函数会将连续的分隔符视为一个分隔符并忽略中间的空字符串
 # text2="apple,,banana,,grape,,orange"
 # print(text2.split(","))
 # # splitlines()主要用于根据换行符\r（回车）、\r\n（回车并换行）、\n（换行）进行分割
