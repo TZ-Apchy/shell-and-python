@@ -35,8 +35,16 @@ print("-"*30)
 # ip_list=re.findall(r"\d+\.\d+\.\d+\.\d+",content)
 # print(ip_list)
 
+
+# str1="Hello 1234567 World_This is a Regex Demo"
 # # 非贪婪匹配
-# reg_list1=re.findall(r'He.*(\d+).*emo$',content)
+# reg_list1=re.findall(r'He.*(\d+).*emo$',str1)
 # # 贪婪匹配
-# reg_list2=re.findall(r'He.*?(\d+).*emo$',content)
+# reg_list2=re.findall(r'He.*?(\d+).*emo$',str1)
 # print("非贪婪匹配reg_list1：",reg_list1,"\n贪婪匹配reg_list2：",reg_list2)
+
+# str2="AabB"
+# # 匹配字符串不区分大小写
+# matach_str=re.findall(r'a',str2,re.I) # re.I是re.IGNORECASE的简写
+# print(matach_str)
+
