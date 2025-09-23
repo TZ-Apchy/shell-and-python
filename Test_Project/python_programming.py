@@ -21,6 +21,12 @@
 # print(cy3, id(cy3), id(cy3[5]), id(a[5]))
 # print(id(a[7]),id(cy1[7]),id(cy2[7]),id(cy3[7]))
 
+# a=[1,2,3]
+# b=a.copy()
+# for i in a:
+#     b.append(i*2)
+# print(a,b,sep="\n")
+
 # a1="hello" # 不可变数据类型
 # b1="hello"
 # c1=a1
@@ -1244,11 +1250,14 @@
 # lists=[i for i in range(i,i+3)]
 # print(i)
 
-# lists=[lambda x:x+y for y in range(3)] # y是lambda函数的外部变量，只有在调用的时候才会取其值，即在for循环中y的取值为0，1，2，但在lambda表达式中y的取值为2
+# # y是lambda函数的外部变量，只有在调用的时候才会取其值，即在for循环
+# # 中y的取值为0，1，2，但在lambda表达式中y的取值为2
+# lists=[lambda x:x+y for y in range(3)]
 # a=lists[0](2)
 # b=lists[1](2)
 # c=lists[2](2)
 # print(a,b,c)
+
 
 # for i in range(3):
 #     print(i)
@@ -1518,7 +1527,7 @@
 #     line=line.strip() # 删除开头和结尾的空白
 #     # split()函数是Python字符串的内置方法，用于将一个字符串按照指定的分隔符拆分成多个子字符串，并将这些子字符串存储在列表中；默认情况下，split()函数会使用所有空白字符作为分隔符，包括空格、制表符、换行符等
 #     arr=line.split(",") # arr是一个列表
-#     # print(arr,type(arr))
+#     print(arr,type(arr))
 #     n=arr[0]
 #     a=arr[2]
 #     h=arr[3]
