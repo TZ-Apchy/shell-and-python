@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="88e01aa6-d7c5-411d-b4e0-7ccc459cf3de" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/python_programming.py" beforeDir="false" afterPath="$PROJECT_DIR$/python_programming.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +14,17 @@
     <favorites_list name="Test_Project" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day day up/day01.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -86,6 +95,7 @@
         <option value="$PROJECT_DIR$/re/search.py" />
         <option value="$PROJECT_DIR$/re/findall.py" />
         <option value="$PROJECT_DIR$/re/match.py" />
+        <option value="$PROJECT_DIR$/day day up/day01.py" />
       </list>
     </option>
   </component>
@@ -111,7 +121,7 @@
             <path>
               <item name="Test_Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="Test_Project" type="462c0819:PsiDirectoryNode" />
-              <item name="re" type="462c0819:PsiDirectoryNode" />
+              <item name="day day up" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -150,7 +160,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.findall">
+  <component name="RunManager" selected="Python.day01">
+    <configuration name="day01" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Test_Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/day day up" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day day up/day01.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="findall" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Test_Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -214,27 +245,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="re_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Test_Project" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/re" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/re/re_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="search" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Test_Project" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -257,19 +267,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.python_programming" />
-      <item itemvalue="Python.re_test" />
-      <item itemvalue="Python.match" />
-      <item itemvalue="Python.search" />
       <item itemvalue="Python.findall" />
+      <item itemvalue="Python.match" />
+      <item itemvalue="Python.python_programming" />
+      <item itemvalue="Python.search" />
+      <item itemvalue="Python.day01" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.day01" />
         <item itemvalue="Python.findall" />
         <item itemvalue="Python.search" />
         <item itemvalue="Python.match" />
         <item itemvalue="Python.python_programming" />
-        <item itemvalue="Python.re_test" />
       </list>
     </recent_temporary>
   </component>
@@ -305,13 +315,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49298596" visible="true" weight="0.15730338" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49298596" visible="true" weight="0.15730338" />
       <window_info id="Structure" order="1" sideWeight="0.50701404" side_tool="true" weight="0.15730338" />
       <window_info id="Favorites" order="2" sideWeight="0.50701404" side_tool="true" weight="0.15730338" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4957039" visible="true" weight="0.37464386" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4957039" visible="true" weight="0.37464386" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4990086" weight="0.3988604" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -476,17 +487,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/python_programming.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7375">
-          <caret line="1528" column="21" selection-start-line="1528" selection-start-column="21" selection-end-line="1528" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/re/re_test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret line="39" column="7" lean-forward="true" selection-start-line="39" selection-start-column="7" selection-end-line="39" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/python_programming.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-832">
+          <caret line="1528" column="21" selection-start-line="1528" selection-start-column="21" selection-end-line="1528" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day day up/day01.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
