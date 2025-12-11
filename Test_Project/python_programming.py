@@ -632,8 +632,8 @@
 # 水平移动
 # alien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'medium'}
 # print(f"Original x_position: {alien_0['x_position']}")
-#
-#
+
+
 # def move():
 #     if alien_0['speed'] == 'slow':
 #         x_increment = 1
@@ -643,8 +643,8 @@
 #         x_increment = 3
 #     alien_0['x_position'] = alien_0['x_position'] + x_increment
 #     print(f"New x_position: {alien_0['x_position']}")
-#
-#
+
+
 # move()
 # alien_0['speed'] = 'fast'
 # move()
@@ -698,19 +698,19 @@
 
 # def fun1():
 #     return [lambda x : i * x for i in range(4)]
-#
-#
+
+
 # print([m(2) for m in fun1()])
 
 # a = 1
 # a_b = []
-#
-#
+
+
 # def sample_func():
 #     a = 2
 #     a_b.append(1)
-#
-#
+
+
 # if __name__ == "__main__":
 #     sample_func()
 #     print(a, a_b)
@@ -725,7 +725,7 @@
 # print(int(3.14))
 # print(1.0 - 0.8)
 # print(10/5)
-#
+
 # dic = {'tom': 97, 'lu': 98, 'jerry': 76}
 # # 可以对键或值进行临时排序
 # print(dic.keys(), sorted(dic.keys()))
@@ -781,7 +781,7 @@
 #     'crust': 'thick',
 #     'toppings': ['mushrooms', 'extra cheese'],
 #     }
-#
+
 # print(f"You ordered a {pizza['crust']}-crust pizza "
 #       "with the following toppings:")
 # for topping in pizza['toppings']:
@@ -832,13 +832,13 @@
 #         print(message)
 
 # import math
-#
-#
+
+
 # def cal_vol(radius,height):
 #     vol = math.pi * pow(radius,2) * height
 #     return vol
-#
-#
+
+
 # if __name__ == '__main__':
 #     print(cal_vol(2,4))
 
@@ -850,21 +850,21 @@
 
 # import math
 # import argparse  # 1、导入argpase包
-#
-#
+
+
 # def parse_arg():
 #     parse = argparse.ArgumentParser(description='Calculate cylinder volume')  # 2、创建参数对象
 #     parse.add_argument('radius', type=int, help='Radius of Cylinder')  # 3、往参数对象添加参数
 #     parse.add_argument('height', type=int, help='height of Cylinder')
 #     args = parse.parse_args()  # 4、解析参数对象获得解析对象
 #     return args
-#
-#
+
+
 # def cal_vol(radius, height):
 #     vol = math.pi * pow(radius, 2) * height
 #     return vol
-#
-#
+
+
 # if __name__ == '__main__':
 #     args = parse_arg()
 #     print(cal_vol(args.radius, args.height))  # 5、使用解析对象.参数获取使用命令行参数
@@ -969,35 +969,35 @@
 #         print(b)
 #     else:
 #         return c
-#
-#
+
+
 # max_num(9, 7)
 # print(max_num(4, 7))
 
 # import math
 # import argparse  # 1、导入argpase包
-#
-#
+
+
 # def parse_args():
 #     parse = argparse.ArgumentParser(description='Calculate cylinder volume')  # 创建参数对象
 #     parse.add_argument('--radius', default=2, type=int, help='Radius of Cylinder')  # 通过在参数名前加--，设置为可选参数，往参数对象添加参数
 #     parse.add_argument('--height', default=4, type=int, help='height of Cylinder')
 #     args = parse.parse_args()  # 4、解析参数对象获得解析对象
 #     return args
-#
-#
+
+
 # def cal_vol(radius, height):
 #     vol = math.pi * pow(radius, 2) * height
 #     return vol
-#
-#
+
+
 # if __name__ == '__main__':
 #     args = parse_args()
 #     print(cal_vol(args.radius, args.height))  # 使用解析对象.参数获取使用命令行参数，这里都为可选参数
 
 # import math
 # import argparse  # 导入argpase包
-#
+
 # # 当通过设置required=True后，无论参数是否是可选参数，都必须输入
 # def parse_args():
 #     parse = argparse.ArgumentParser(description='Calculate cylinder volume')  # 创建参数对象
@@ -1006,13 +1006,13 @@
 #     parse.add_argument('-H', '--height', default=4, type=int, metavar='', required=True, help='height of Cylinder')
 #     args = parse.parse_args()  # 4、解析参数对象获得解析对象
 #     return args
-#
-#
+
+
 # def cal_vol(radius, height):
 #     vol = math.pi * pow(radius, 2) * height
 #     return vol
-#
-#
+
+
 # if __name__ == '__main__':
 #     args = parse_args()
 #     print(cal_vol(args.radius, args.height))  # 使用解析对象.参数获取使用命令行参数，这里为必选参数，尽管有默认值
@@ -1022,8 +1022,8 @@
 # def test1(n):
 #     for i in range(n):
 #         return i
-#
-#
+
+
 # print(test1(10))
 # # continue：退出当前循环，继续下一次的循环
 # for i in 'python':
@@ -1055,8 +1055,8 @@
 # # 可以正常运行，并不会报错
 # def sum1():
 #     pass
-#
-#
+
+
 # sum1()
 
 # # 传递任意数量的实参：形参名*a中的星号让python创建一个名为a的空元组
@@ -1064,8 +1064,8 @@
 #     print(a)
 #     for i in a:
 #         print(f"--{i}")
-#
-#
+
+
 # b(1)
 # b(1, 2)
 
@@ -1074,8 +1074,8 @@
 #     print(f"{c} and {d}")
 #     for i in d:
 #         print(f"-{i}")
-#
-#
+
+
 # e(1)  # 任意数量实参没传任何东西
 # e(1, "tz")
 # e(1, "tang", "zhi")
@@ -1086,14 +1086,14 @@
 #     user_info['first_name'] = first
 #     user_info['last_name'] = last
 #     return user_info
-#
-#
+
+
 # user_profile = build_profile('albert', 'einstein', location='princeton', field='physics')  # 关键字实参
 # print(user_profile)
 
 # def func(*args, **kwargs):
 #     print("args:", args, "  kwargs:", kwargs)
-#
+
 # func(4, 5)
 # func(name="Tom", age=20)
 # func(4, 5, name="Tom", age=20)
@@ -1105,13 +1105,13 @@
 #     def run2(self,c):
 #         c.run()
 #         c.run()
-#
-#
+
+
 # class B(A):
 #     def run(self):
 #         print("run - run")
-#
-#
+
+
 # class C(A):
 #     def run(self):
 #         print("run + run")
@@ -1136,7 +1136,7 @@
 #             return object.__new__(cls)
 #     def say_hi(self):
 #         print(f"我今年{self.age}岁了")
-#
+
 # # obj2 = Person(51)  # 会报错
 # # obj2.say_hi()
 # obj1 = Person(5)
@@ -1145,22 +1145,22 @@
 # class Person():
 #     def say_hi(self):
 #         print("我是人类")
-#
+
 # class A:
 #     def say_hi(self):
 #         print("I am A")
-#
+
 # # 就近原则
 # class B(A,Person):
 #     pass
-#
+
 # obj1 = B()
 # obj1.say_hi()
 
 # class Person():
 #     def __init__(self, name):
 #         self.name = name
-#
+
 #     def say(self, *args):
 #         if len(args) == 1:
 #             return self.say1(*args)
@@ -1168,27 +1168,27 @@
 #             return self.say2(*args)
 #     def say1(self, i):
 #         print(i)
-#
+
 #     def say2(self, i, j):
 #         print(i + j)
-#
-#
+
+
 # obj1 = Person("Tom")
 # obj1.say(10)
 # obj1.say(10, 20)
 
 # class Dog():
-#
+
 #     def __init__(self, name, age):  # 初始化属性name和age
 #         self.name = name
 #         self.age = age
-#
+
 #     def sit(self):
 #         print(f"{self.name} is now sitting.")
-#
+
 #     def roll_over(self):
 #         print(f"{self.name} rolled over!")
-#
+
 # d = Dog("tom", 10)
 # d.sit()
 # # print(d.name)  # 表示调用当前对象的name属性
@@ -1286,7 +1286,7 @@
 #         return b
 #     print(fun1()) # 先在fun1中找变量b，如果没有再去上层中找，即从当前作用域中由内向外找
 #     return b
-#
+
 # print(fun())
 # print(b)
 
@@ -1296,7 +1296,7 @@
 #     s=5
 #     for i in range(5):
 #         s+=i
-#
+
 # fun()
 # print(s) # 这里打印的s的值是全局变量中定义的s，如果在局部变量中用了global，会使其变成全局变量
 
@@ -1311,8 +1311,8 @@
 #             s+=i
 #     fun1()
 #     print(s)
-#
-#
+
+
 # fun()
 # print(s)
 
@@ -1327,8 +1327,8 @@
 #             s+=i
 #     fun1()
 #     print(s) # 由于nonlocal的绑定关系，使得s=1变成了s=2，并参与了运算
-#
-#
+
+
 # fun()
 # print(s)
 
@@ -1340,7 +1340,7 @@
 #         x+=1
 #         return x
 #     return inner
-#
+
 # f=outer()
 # print(f())
 # print(f())
@@ -1421,7 +1421,7 @@
 # def fun(x,*y):
 #     for i in y:
 #         print(i,type(i))
-#
+
 # fun(1,*("m","n")) # 与下面的fun(1,"m","n")等价
 # fun(1,"m","n")
 
@@ -1704,7 +1704,7 @@
 
 # import math
 # from decimal import Decimal, getcontext
-#
+
 # print("π的值是:", math.pi)
 # # 设置更高的精度
 # getcontext().prec = 50  # 精度设置为50位小数
@@ -1797,16 +1797,16 @@
 # 2代表从文件末尾进行偏移
 
 # with open("with_open\seek.txt") as f:
-    # f.seek(0) # 从文件开头开始，不偏移
-    # print(f.read())
-    # f.seek(2) # 向文件尾部发生2个偏移量
-    # print(f.read())
-    # f.seek(0,0)  # 将指针移动到文件开头
-    # print(f.read())
-    # f.seek(0,2) # 将指针移动到文件末尾
-    # print(f.read())
-    # position=f.seek(0,1) # 获取当前文件指针的位置
-    # print(position)
+#     f.seek(0) # 从文件开头开始，不偏移
+#     print(f.read())
+#     f.seek(2) # 向文件尾部发生2个偏移量
+#     print(f.read())
+#     f.seek(0,0)  # 将指针移动到文件开头
+#     print(f.read())
+#     f.seek(0,2) # 将指针移动到文件末尾
+#     print(f.read())
+#     position=f.seek(0,1) # 获取当前文件指针的位置
+#     print(position)
 
 # # 追加读写模式（a+）：写入始终在文件末尾，但读取可从头开始
 # with open('with_open\with_open_a+.txt', 'a+') as f:
