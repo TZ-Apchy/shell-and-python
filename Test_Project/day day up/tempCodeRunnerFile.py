@@ -1,2 +1,1 @@
-print("hello","world",sep=" ",end="")
-# print("****",sep=" ")
+    print(f"{i:2d}",end=" ")
